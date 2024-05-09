@@ -1,5 +1,5 @@
 # GAMA-Code-Generator
 
-```gaml
+```py
 global {}
 ```
