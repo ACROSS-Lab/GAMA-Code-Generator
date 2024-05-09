@@ -1,0 +1,1696 @@
+question,answer
+"How can I define the global attributes, actions, and behaviors in a model in gaml?","global {
+    // Define global attributes here 
+    int global_attr1;
+    float global_attr2;
+    // ...
+
+    // Define global actions here    
+    init {
+        // Implementation details
+        create something;
+    }
+    
+    action global_action {
+        // Implementation details
+    }
+    // ...
+}
+"
+"How can I define the species attributes, actions, and behaviors in a model in gaml?","species {
+    // Define species attributes here
+    
+    // Define species actions here
+    
+    // Define species behaviors here
+}"
+"How can I define the experiment attributes, actions, and behaviors in a model in gaml?","experiment {
+    // Define species attributes here
+    
+    // Define species actions here
+    
+    // Define species behaviors here
+}"
+"How can you declare and initialize the variable ""nb_preys_init"" to the value 200 in the global section of a GAML model?","global {
+        int nb_preys_init <- 200;
+        init {
+                create prey number: nb_preys_init;
+        }
+}"
+How would you modify the provided GAML code to change the initial number of preys from 200 to a different value? Provide the modified code.,"global {
+        int nb_preys_init <- 200;
+        init {
+                create prey number: nb_preys_init;
+        }
+}"
+"What coding approach would you adopt to declare and set the value of ""nb_preys_init"" to 200 within the global segment of a GAML model?","global {
+        int nb_preys_init <- 200;
+        init {
+                create prey number: nb_preys_init;
+        }
+}"
+"If you wanted to establish the variable ""nb_preys_init"" with an initial value of 200, how would you do so in the global section of a GAML model?","global {
+        int nb_preys_init <- 200;
+        init {
+                create prey number: nb_preys_init;
+        }
+}"
+"Provide the code snippet that demonstrates the declaration and initialization of the variable ""nb_preys_init"" to 200 in the global section of a GAML model.","global {
+        int nb_preys_init <- 200;
+        init {
+                create prey number: nb_preys_init;
+        }
+}"
+"In the global section of a GAML model, what specific coding conventions would you follow to declare and set the value of ""nb_preys_init"" to 200?","global {
+        int nb_preys_init <- 200;
+        init {
+                create prey number: nb_preys_init;
+        }
+}"
+"What is the correct syntax for defining and giving the variable ""nb_preys_init"" an initial value of 200 in the global section of a GAML model?","global {
+        int nb_preys_init <- 200;
+        init {
+                create prey number: nb_preys_init;
+        }
+}"
+"Describe the process of setting up and assigning the value 200 to the variable ""nb_preys_init"" in the global portion of a GAML model.","global {
+        int nb_preys_init <- 200;
+        init {
+                create prey number: nb_preys_init;
+        }
+}"
+"If you wanted to establish the variable ""nb_preys_init"" with an initial value of 200, how would you do so in the global section of a GAML model?","global {
+        int nb_preys_init <- 200;
+        init {
+                create prey number: nb_preys_init;
+        }
+}"
+"How can you declare and initialize the variable ""nb_predators_init"" to the value 500 in the global section of a GAML model?","global {
+	int nb_predators_init <- 500;
+	init {
+		create prey number: nb_predators_init;
+	}
+}"
+"In the global section of a GAML model, how would you go about declaring and assigning the value 600 to the variable ""nb_predators_init""?","global {
+        int nb_predators_init <- 600;
+        init {
+                create prey number: nb_predators_init;
+        }
+}"
+"Could you provide instructions on initializing the variable ""nb_predators_init"" to 700 within the global context of a GAML model?","global {
+        int nb_predators_init <- 700;
+        init {
+                create prey number: nb_predators_init;
+        }
+}"
+"If you wanted to establish the variable ""nb_predators_init"" with an initial value of 800, how would you do so in the global section of a GAML model?","global {
+        int nb_predators_init <- 800;
+        init {
+                create prey number: nb_predators_init;
+        }
+}"
+"Provide the code snippet that demonstrates the declaration and initialization of the variable ""nb_predators_init"" to 900 in the global section of a GAML model.","global {
+        int nb_predators_init <- 900;
+        init {
+                create prey number: nb_predators_init;
+        }
+}"
+"What coding approach would you adopt to declare and set the value of ""nb_predators_init"" to 50 within the global segment of a GAML model?","global {
+        int nb_predators_init <- 50;
+        init {
+                create prey number: nb_predators_init;
+        }
+}"
+Generate a gaml code snippet for species,"species {
+    // Define species attributes here
+    
+    // Define species actions here
+    
+    // Define species behaviors here
+}"
+"How would you instruct a text-to-code model to generate a GAML code snippet for a species called ""Prey,"" incorporating attributes such as ""preyID,"" ""posX,"" and ""posY,"" along with an initialization block and an action named ""Move""?","species Prey {
+    int preyID;
+    float posX, posY;
+    
+    init {
+        preyID <- rnd(1, 1000);
+        posX <- rnd(-50, 50);
+        posY <- rnd(-50, 50);
+    }
+    
+    action Move {
+        posX <- posX + rnd(-5, 5);
+        posY <- posY + rnd(-5, 5);
+    }
+}"
+"Outline the instructions for a text-to-code model to produce a GAML code snippet featuring a species named ""Prey"" with attributes like ""preyID,"" ""posX,"" and ""posY,"" alongside an initialization block and an action called ""Move.""","species Prey {
+    int preyID;
+    float posX, posY;
+    
+    init {
+        preyID <- rnd(1, 1000);
+        posX <- rnd(-50, 50);
+        posY <- rnd(-50, 50);
+    }
+    
+    action Move {
+        posX <- posX + rnd(-5, 5);
+        posY <- posY + rnd(-5, 5);
+    }
+}"
+"Describe the steps to guide a text-to-code model in generating a GAML code snippet that defines a species named ""Prey,"" including attributes such as ""preyID,"" ""posX,"" and ""posY,"" along with an initialization block and an action named ""Move.""","species Prey {
+    int preyID;
+    float posX, posY;
+    
+    init {
+        preyID <- rnd(1, 1000);
+        posX <- rnd(-50, 50);
+        posY <- rnd(-50, 50);
+    }
+    
+    action Move {
+        posX <- posX + rnd(-5, 5);
+        posY <- posY + rnd(-5, 5);
+    }
+}"
+"Provide guidance on how to prompt a text-to-code model to create a GAML code snippet depicting a species named ""Prey,"" incorporating attributes like ""preyID,"" ""posX,"" and ""posY,"" as well as an initialization block and an action named ""Move.""","species Prey {
+    int preyID;
+    float posX, posY;
+    
+    init {
+        preyID <- rnd(1, 1000);
+        posX <- rnd(-50, 50);
+        posY <- rnd(-50, 50);
+    }
+    
+    action Move {
+        posX <- posX + rnd(-5, 5);
+        posY <- posY + rnd(-5, 5);
+    }
+}"
+"Instruct a text-to-code model to generate a GAML code snippet that introduces a species named ""Prey,"" comprising attributes such as ""preyID,"" ""posX,"" and ""posY,"" along with an initialization block and an action called ""Move.""","species Prey {
+    int preyID;
+    float posX, posY;
+    
+    init {
+        preyID <- rnd(1, 1000);
+        posX <- rnd(-50, 50);
+        posY <- rnd(-50, 50);
+    }
+    
+    action Move {
+        posX <- posX + rnd(-5, 5);
+        posY <- posY + rnd(-5, 5);
+    }
+}"
+"generate a gaml code snippet that introduces a species named ""Prey,"" comprising attributes such as ""preyID,"" ""posX,"" and ""posY,"" along with an initialization block and an action called ""Move.""","species Prey {
+    int preyID;
+    float posX, posY;
+    
+    init {
+        preyID <- rnd(1, 1000);
+        posX <- rnd(-50, 50);
+        posY <- rnd(-50, 50);
+    }
+    
+    action Move {
+        posX <- posX + rnd(-5, 5);
+        posY <- posY + rnd(-5, 5);
+    }
+}"
+"Generate a GAML code snippet that defines a species named ""Hunter,"" incorporating attributes such as ""hunterID,"" ""posX,"" and ""posY,"" along with an initialization block and an action named ""Track.""","species Hunter {
+    int hunterID;
+    float posX, posY;
+    
+    init {
+        hunterID <- rnd(1, 1000);
+        posX <- rnd(-50, 50);
+        posY <- rnd(-50, 50);
+    }
+    
+    action Track {
+        posX <- posX + rnd(-5, 5);
+        posY <- posY + rnd(-5, 5);
+    }
+}"
+"Develop a GAML code snippet presenting a species named ""Explorer,"" featuring attributes like ""explorerID,"" ""latitude,"" and ""longitude,"" along with an initialization block and an action named ""Navigate.""","species Explorer {
+    int explorerID;
+    float latitude, longitude;
+    
+    init {
+        explorerID <- rnd(1, 1000);
+        latitude <- rnd(-90, 90);
+        longitude <- rnd(-180, 180);
+    }
+    
+    action Navigate {
+        latitude <- latitude + rnd(-2, 2);
+        longitude <- longitude + rnd(-2, 2);
+    }
+}"
+"Create a GAML code snippet introducing a species named ""Robot,"" containing attributes such as ""robotID,"" ""positionX,"" and ""positionY,"" along with an initialization block and an action named ""MoveForward.""","species Robot {
+    int robotID;
+    float positionX, positionY;
+    
+    init {
+        robotID <- rnd(1, 1000);
+        positionX <- rnd(-50, 50);
+        positionY <- rnd(-50, 50);
+    }
+    
+    action MoveForward {
+        positionX <- positionX + rnd(-5, 5);
+        positionY <- positionY + rnd(-5, 5);
+    }
+}"
+"Generate a GAML code snippet defining a species named ""Fish,"" featuring attributes like ""fishID,"" ""depth,"" and ""swimDirection,"" alongside an initialization block and an action called ""Swim.""","species Fish {
+    int fishID;
+    float depth, swimDirection;
+    
+    init {
+        fishID <- rnd(1, 1000);
+        depth <- rnd(1, 100);
+        swimDirection <- rnd(0, 360);
+    }
+    
+    action Swim {
+        depth <- depth + rnd(-5, 5);
+        swimDirection <- rnd(0, 360);
+    }
+}"
+"Develop a GAML code snippet for a species named ""Bird,"" including attributes such as ""birdID,"" ""altitude,"" and ""flightDirection,"" along with an initialization block and an action named ""Fly.""","species Bird {
+    int birdID;
+    float altitude, flightDirection;
+    
+    init {
+        birdID <- rnd(1, 1000);
+        altitude <- rnd(1, 50);
+        flightDirection <- rnd(0, 360);
+    }
+    
+    action Fly {
+        altitude <- altitude + rnd(-2, 2);
+        flightDirection <- rnd(0, 360);
+    }
+}"
+"Create a GAML code snippet for a species named ""Vehicle,"" containing attributes like ""vehicleID,"" ""speed,"" and ""position,"" alongside an initialization block and an action named ""MoveForward.""","species Vehicle {
+    int vehicleID;
+    float speed, position;
+    
+    init {
+        vehicleID <- rnd(1, 1000);
+        speed <- rnd(30, 120);
+        position <- rnd(-100, 100);
+    }
+    
+    action MoveForward {
+        position <- position + speed * rnd(0.8, 1.2);
+    }
+}"
+"Develop a GAML code snippet for a species named ""Human,"" with attributes like ""humanID,"" ""age,"" and ""location,"" along with an initialization block and an action named ""Walk.""","species Human {
+    int humanID;
+    int age;
+    float location;
+    
+    init {
+        humanID <- rnd(1, 1000);
+        age <- rnd(1, 100);
+        location <- rnd(-10, 10);
+    }
+    
+    action Walk {
+        location <- location + rnd(-2, 2);
+    }
+}"
+"Generate a GAML code snippet for a species named ""Building,"" featuring attributes such as ""buildingID,"" ""height,"" and ""location,"" alongside an initialization block and an action named ""Collapse.""","species Building {
+    int buildingID;
+    float height, location;
+    
+    init {
+        buildingID <- rnd(1, 1000);
+        height <- rnd(10, 100);
+        location <- rnd(-100, 100);
+    }
+    
+    action Collapse {
+        height <- 0;
+    }
+}"
+"Create a GAML code snippet introducing a species named ""Plant,"" including attributes like ""plantID,"" ""growthRate,"" and ""nutrientLevel,"" along with an initialization block and an action named ""Grow.""","species Plant {
+    int plantID;
+    float growthRate, nutrientLevel;
+    
+    init {
+        plantID <- rnd(1, 1000);
+        growthRate <- rnd(0.1, 1.0);
+        nutrientLevel <- rnd(0, 100);
+    }
+    
+    action Grow {
+        nutrientLevel <- nutrientLevel + growthRate * rnd(0.8, 1.2);
+    }
+}"
+"Develop a GAML code snippet for a species named ""Insect,"" comprising attributes like ""insectID,"" ""wingColor,"" and ""position,"" along with an initialization block and an action named ""Fly.""","species Insect {
+    int insectID;
+    string wingColor;
+    float position;
+    
+    init {
+        insectID <- rnd(1, 1000);
+        wingColor <- choose(""Red"", ""Green"", ""Blue"");
+        position <- rnd(-10, 10);
+    }
+    
+    action Fly {
+        position <- position + rnd(-2, 2);
+    }
+}"
+"generate a GAML code snippet for the global section of a model, defining attributes such as ""nb_preys_init,"" ""prey_max_energy,"" ""prey_max_transfer,"" and ""prey_energy_consum,"" along with an initialization block that creates a specified number of preys?","global {
+        int nb_preys_init <- 200;
+        float prey_max_energy <- 1.0;
+        float prey_max_transfer <- 0.1;
+        float prey_energy_consum <- 0.05;
+        
+        init {
+                create prey number: nb_preys_init;
+        }
+}"
+"Develop a GAML code snippet for the global section of a model, defining attributes like ""nb_species_init,"" ""species_max_energy,"" ""species_max_transfer,"" and ""species_energy_consumption,"" along with an initialization block that creates a specific number of species.","global {
+        int nb_preys_init <- 200;
+        float prey_max_energy <- 1.0;
+        float prey_max_transfer <- 0.1;
+        float prey_energy_consum <- 0.05;
+        
+        init {
+                create prey number: nb_preys_init;
+        }
+}"
+"Provide instructions for generating a GAML code snippet in the global section of a model, introducing variables such as ""nb_cells_init,"" ""cell_max_energy,"" ""cell_max_transfer,"" and ""cell_energy_consumption,"" along with an initialization block creating a designated number of cells.","global {
+        int nb_preys_init <- 200;
+        float prey_max_energy <- 1.0;
+        float prey_max_transfer <- 0.1;
+        float prey_energy_consum <- 0.05;
+        
+        init {
+                create prey number: nb_preys_init;
+        }
+}"
+"Direct the generation of a GAML code snippet for the global section of a model, defining parameters like ""nb_agents_init,"" ""agent_max_energy,"" ""agent_max_transfer,"" and ""agent_energy_consumption,"" along with an initialization block creating a specified number of agents.","global {
+        int nb_preys_init <- 200;
+        float prey_max_energy <- 1.0;
+        float prey_max_transfer <- 0.1;
+        float prey_energy_consum <- 0.05;
+        
+        init {
+                create prey number: nb_preys_init;
+        }
+}"
+,"global {
+    int nb_entities_init <- 100;
+    float entity_max_energy <- 10.0;
+    float entity_max_transfer <- 1.0;
+    float entity_energy_consumption <- 0.1;
+
+    init {
+        create entity number: nb_entities_init;
+    }
+}"
+"generate a GAML code snippet for the global section of a model, defining variables such as ""nb_agents_init,"" ""agent_max_energy,"" ""agent_max_transfer,"" and ""agent_energy_consumption,"" along with an initialization block that creates a predetermined number of agents","global {
+    int nb_agents_init <- 150;
+    float agent_max_energy <- 8.0;
+    float agent_max_transfer <- 0.8;
+    float agent_energy_consumption <- 0.15;
+
+    init {
+        create agent number: nb_agents_init;
+    }
+}
+"
+"produce a GAML code snippet for the global section of a model, defining attributes such as ""nb_cells_init,"" ""cell_max_energy,"" ""cell_max_transfer,"" and ""cell_energy_consumption,"" accompanied by an initialization block creating a specific number of cells","global {
+    int nb_cells_init <- 120;
+    float cell_max_energy <- 12.0;
+    float cell_max_transfer <- 1.2;
+    float cell_energy_consumption <- 0.12;
+
+    init {
+        create cell number: nb_cells_init;
+    }
+}"
+"generate a GAML code snippet for the global section of a model, outlining variables like ""nb_species_init,"" ""species_max_energy,"" ""species_max_transfer,"" and ""species_energy_consumption,"" with an initialization block that creates a specified number of species","global {
+    int nb_species_init <- 80;
+    float species_max_energy <- 6.0;
+    float species_max_transfer <- 0.6;
+    float species_energy_consumption <- 0.18;
+
+    init {
+        create species number: nb_species_init;
+    }
+}"
+"generate a GAML code snippet for the global section of a model, defining variables like ""nb_species_init,"" ""species_max_energy,"" and ""species_type"" with data types ""int,"" ""float,"" and ""string"" respectively, accompanied by an initialization block that creates a specified number of species?","global {
+    int nb_species_init <- 80;
+    float species_max_energy <- 6.0;
+    string species_type <- ""Mammal"";
+    
+    init {
+        create species number: nb_species_init;
+    }
+}"
+"generate a GAML code snippet for the global section of a model, specifying variables such as ""species_name"" with data type ""string,"" ""species_max_transfer,"" and ""species_energy_consumption"" with data type ""float,"" accompanied by an initialization block that creates a designated number of species?","global {
+    string species_name <- ""Bird"";
+    float species_max_transfer <- 0.6;
+    float species_energy_consumption <- 0.18;
+
+    init {
+        create species number <- 50;
+    }
+}"
+"generate a GAML code snippet for the global section of a model, defining variables like ""species_name"" with data type ""string,"" ""species_max_transfer,"" and ""species_energy_consumption"" with data type ""float,"" along with an initialization block that creates a specified number of species?","global {
+    string species_name <- ""Bird"";
+    float species_max_transfer <- 0.6;
+    float species_energy_consumption <- 0.18;
+
+    init {
+        create species number <- 50;
+    }
+}"
+"generate a GAML code snippet for the global section of a model, specifying variables such as ""nb_species_init"" with data type ""int"" and ""species_family"" with data type ""string,"" accompanied by an initialization block that creates a predetermined number of species","global {
+    int nb_species_init <- 80;
+    string species_family <- ""Reptile"";
+    
+    init {
+        create species number: nb_species_init;
+    }
+}"
+"generate a GAML code snippet for the global section of a model, defining variables such as ""nb_species_init"" with data type ""int"" and ""species_family"" with data type ""string,"" where ""nb_species_init"" is initialized with a random value between 40 and 50, accompanied by an initialization block that creates a specified number of species","global {
+    int nb_species_init <- rnd(40,50);
+    string species_family <- ""Reptile"";
+    
+    init {
+        create species number: nb_species_init;
+    }
+}"
+"generate a GAML code snippet for the global section of a model, defining variables like ""nb_species_init"" with data type ""int"" and ""species_density"" with data type ""float,"" where ""nb_species_init"" is initialized with a random value between 30 and 60, accompanied by an initialization block that creates a specified number of species","global {
+    int nb_species_init <- rnd(30, 60);
+    float species_density <- 0.5;
+    
+    init {
+        create species number: nb_species_init;
+    }
+}"
+"generate a GAML code snippet for the global section of a model, specifying variables such as ""nb_species_init"" with data type ""float"" and ""species_type"" with data type ""string,"" where ""nb_species_init"" is initialized with a random value between 40 and 50, accompanied by an initialization block that creates a specified number of species","global {
+    float nb_species_init <- rnd(40, 50);
+    string species_type <- ""Amphibian"";
+    
+    init {
+        create species number: int(nb_species_init);
+    }
+}"
+"generate a GAML code snippet for the global section of a model, defining variables like ""nb_species_init"" with data type ""float"" and ""species_type"" with data type ""string,"" where ""nb_species_init"" is initialized with a random value between 40 and 50, accompanied by an initialization block that creates a specified number of species?","global {
+    float nb_species_init <- rnd(40, 50);
+    string species_type <- ""Amphibian"";
+    
+    init {
+        create species number: int(nb_species_init);
+    }
+}
+"
+"generate a GAML code snippet that input data from file ""../includes/building.shp"", ""../includes/road.shp"", ""../includes/bounds.shp"" to create buildings and roads","global {
+        file shape_file_buildings <- file(""../includes/building.shp"");
+        file shape_file_roads <- file(""../includes/road.shp"");
+        file shape_file_bounds <- file(""../includes/bounds.shp"");
+        geometry shape <- envelope(shape_file_bounds);
+        float step <- 10 #mn;
+        
+        init {
+                create building from: shape_file_buildings with: [type::string(read (""NATURE""))] {
+                        if type=""Industrial"" {
+                                color <- #blue ;
+                        }
+                }
+                create road from: shape_file_roads ;
+        }
+}"
+"generate a GAML code snippet that uses a shapefile ('../includes/agriculture.shp') to create fields, focusing on areas labeled as 'Crop' and assigning them a distinctive color, such as #green","global {
+        file shape_file_agriculture <- file(""../includes/agriculture.shp"");
+        geometry shape <- envelope(shape_file_bounds);
+        
+        init {
+                create field from: shape_file_agriculture with: [type::string(read (""AGRICULTURE""))] {
+                        if type=""Crop"" {
+                                color <- #green ;
+                        }
+                }
+        }
+}
+"
+"generating a GAML code snippet similar to the provided example? The objective is to create houses based on a shapefile ('../includes/residential.shp'), specifically differentiating between 'Apartment' and 'House' types and assigning distinctive colors (#yellow for apartments, #orange for houses).","global {
+        file shape_file_residential <- file(""../includes/residential.shp"");
+        geometry shape <- envelope(shape_file_bounds);
+        
+        init {
+                create house from: shape_file_residential with: [type::string(read (""RESIDENTIAL""))] {
+                        if type=""Apartment"" {
+                                color <- #yellow ;
+                        }
+                        else if type=""House"" {
+                                color <- #orange ;
+                        }
+                }
+        }
+}"
+"generate a GAML code snippet akin to the provided example? The goal is to utilize a shapefile ('../includes/commercial.shp') to create shops, distinguishing between 'Retail' and 'Office' types and assigning distinctive colors (#purple for retail, #pink for office)","global {
+        file shape_file_commercial <- file(""../includes/commercial.shp"");
+        geometry shape <- envelope(shape_file_bounds);
+        
+        init {
+                create shop from: shape_file_commercial with: [type::string(read (""COMMERCIAL""))] {
+                        if type=""Retail"" {
+                                color <- #purple ;
+                        }
+                        else if type=""Office"" {
+                                color <- #pink ;
+                        }
+                }
+        }
+}"
+"generating a GAML code snippet similar to the provided example? The objective is to create buildings and roads based on shapefiles ('../includes/building.shp' and '../includes/road.shp' respectively), with specific conditions for 'Industrial' buildings to be colored #blue. Additionally, residential buildings are identified, and a specified number of people (nb_people) are created within these residential buildings","global {
+        file shape_file_buildings <- file(""../includes/building.shp"");
+        file shape_file_roads <- file(""../includes/road.shp"");
+        file shape_file_bounds <- file(""../includes/bounds.shp"");
+        geometry shape <- envelope(shape_file_bounds);
+        float step <- 10 #mn;
+        int nb_people <- 100;
+        
+        init {
+                create building from: shape_file_buildings with: [type::string(read (""NATURE""))] {
+                        if type=""Industrial"" {
+                                color <- #blue ;
+                        }
+                }
+                create road from: shape_file_roads ;
+                
+                list<building> residential_buildings <- building where (each.type=""Residential"");
+                create people number: nb_people {
+                        location <- any_location_in (one_of (residential_buildings));
+                }
+        }
+}"
+"generate a GAML code snippet that utilizes a shapefile ('../includes/education.shp') to create educational facilities, specifically schools with an assigned color of #orange. Additionally, a certain number of students (nb_students) should be created and located within buildings labeled as 'School' based on the provided shapefile.","global {
+        file shape_file_education <- file(""../includes/education.shp"");
+        geometry shape <- envelope(shape_file_bounds);
+        int nb_students <- 200;
+        
+        init {
+                create school from: shape_file_education with: [type::string(read (""EDUCATION""))] {
+                        color <- #orange;
+                }
+                
+                list<building> school_buildings <- building where (each.type=""School"");
+                create students number: nb_students {
+                        location <- any_location_in (one_of (school_buildings));
+                }
+        }
+}"
+"Generate GAML code using the shapefile '../includes/healthcare.shp' to create hospitals (#red), and generate a specified number of patients located within buildings labeled 'Hospital.'","global {
+        file shape_file_healthcare <- file(""../includes/healthcare.shp"");
+        geometry shape <- envelope(shape_file_bounds);
+        int nb_patients <- 150;
+        
+        init {
+                create hospital from: shape_file_healthcare with: [type::string(read (""HEALTHCARE""))] {
+                        color <- #red;
+                }
+                
+                list<building> hospital_buildings <- building where (each.type=""Hospital"");
+                create patients number: nb_patients {
+                        location <- any_location_in (one_of (hospital_buildings));
+                }
+        }
+}"
+"Generate GAML code using the shapefile '../includes/commercial.shp' to create commercial spaces, differentiating between 'Retail' and 'Office' types with colors #purple and #pink, respectively.","global {
+        file shape_file_commercial <- file(""../includes/commercial.shp"");
+        geometry shape <- envelope(shape_file_bounds);
+        
+        init {
+                create shop from: shape_file_commercial with: [type::string(read (""COMMERCIAL""))] {
+                        if type=""Retail"" {
+                                color <- #purple ;
+                        }
+                        else if type=""Office"" {
+                                color <- #pink ;
+                        }
+                }
+        }
+}"
+"create parks using a shapefile ('../includes/parks.shp'), assigning a distinctive color (#green). Specify the necessary components, conditions, and parameters to be included in the GAML code during the generation process.","global {
+        file shape_file_parks <- file(""../includes/parks.shp"");
+        geometry shape <- envelope(shape_file_bounds);
+        
+        init {
+                create park from: shape_file_parks with: [type::string(read (""PARK""))] {
+                        color <- #green;
+                }
+        }
+}"
+" generate a GAML code structure with distinct sections for global, species, and an experiment section","global {
+    // Define global attributes here 
+
+    // Define global actions here    
+    
+    // Define global behaviors here
+
+}
+
+species {
+    // Define species attributes here
+    
+    // Define species actions here
+    
+    // Define species behaviors here
+}
+
+experiment {
+    // Define species attributes here
+    
+    // Define species actions here
+    
+    // Define species behaviors here
+}"
+"How can I define the species attributes, actions, and behaviors in a model in gaml?","species {
+    // Define species attributes here 
+    int species_attr1;
+    float species_attr2;
+    // ...
+
+    // Define species actions here    
+    init {
+        // Implementation details
+        create something;
+    }
+    
+    action species_action {
+        // Implementation details
+    }
+    // ...
+}"
+"generate experiment code snippet in GAML to display species building, road, people that we define before","experiment road_traffic type: gui {
+        parameter ""Shapefile for the buildings:"" var: shape_file_buildings category: ""GIS"" ;
+        parameter ""Shapefile for the roads:"" var: shape_file_roads category: ""GIS"" ;
+        parameter ""Shapefile for the bounds:"" var: shape_file_bounds category: ""GIS"" ;
+        parameter ""Number of people agents"" var: nb_people category: ""People"" ;
+        
+        output {
+                display city_display type:3d {
+                        species building aspect: base ;
+                        species road aspect: base ;
+                        species people aspect: base ;
+                }
+        }
+}"
+generate experiment code snippet in GAML to display species prey with aspect we define in species ,"experiment prey_predator type: gui {
+        parameter ""Initial number of preys: "" var: nb_preys_init min: 1 max: 1000 category: ""Prey"";
+        output {
+                display main_display {
+                        species prey aspect: base;
+                }
+        }
+}"
+"generate a GAML experiment code snippet that involves a species named 'herbivore,' with a defined aspect, and includes parameters for the initial number of herbivores in a GUI output display?","experiment herbivore_feeding type: gui {
+    parameter ""Initial number of herbivores: "" var: nb_herbivores_init min: 1 max: 1000 category: ""Herbivore"";
+    output {
+        display main_display {
+            species herbivore aspect: base;
+        }
+    }
+}
+"
+"generate a GAML experiment code snippet featuring a species named 'bird' with a defined aspect, and include parameters for the initial number of birds in a GUI output display","experiment bird_flying type: gui {
+    parameter ""Initial number of birds: "" var: nb_birds_init min: 1 max: 1000 category: ""Bird"";
+    output {
+        display main_display {
+            species birds aspect: draw_bird;
+        }
+    }
+}
+"
+"generate a GAML experiment code snippet to display a species named 'fish' with a defined aspect, incorporating parameters for the initial number of fish in a GUI output display","experiment fish_swimming type: gui {
+    parameter ""Initial number of fish: "" var: nb_fish_init min: 1 max: 1000 category: ""Fish"";
+    output {
+        display main_display {
+            species fish aspect: drawing_fish;
+        }
+    }
+}
+"
+generate for me a model for a species predator and an experiment to display it in GAML,"species predator {
+        float size <- 2.0;
+        rgb color <- #red;
+                
+        aspect base {
+                draw square(size) color: color;
+        }
+}
+
+experiment predator_hunting type: gui {
+        parameter ""Initial number of predators: "" var: nb_predators_init min: 1 max: 1000 category: ""Predator"";
+        output {
+                display main_display {
+                        species predator aspect: base;
+                }
+        }
+}
+"
+generate for me a model for a species fish and an experiment to display it in GAML,"species fish {
+	float fish_shape <- 0.3;
+	rgb color <- #cyan;
+		
+	aspect display {
+		draw rectagle(fish_shape) color: color;
+	}
+}
+
+experiment fish_swimming type: gui {
+	parameter ""Initial number of fish: "" var: nb_fish_init min: 1 max: 1000 category: ""Fish"";
+	output {
+		display main_display {
+			species fish aspect: display;
+		}
+	}
+}
+"
+give me a model for a species fish and an experiment to display it in GAML,"species plane {
+	float size <- 0.2;
+	rgb color <- #purple;
+		
+	aspect base {
+		draw circle(size) color: color;
+	}
+}
+
+experiment insect_buzzing type: gui {
+	parameter ""Initial number of insects: "" var: nb_insects_init min: 1 max: 1000 category: ""Insect"";
+	output {
+		display main_display {
+			species insect aspect: circle;
+		}
+	}
+}
+"
+"give me a GAML code snippet for a grid structure named 'vegetation_cell' with a size of 50x50, considering a neighborhood of 4 cells around the current cell. The attributes include 'max_food,' 'food_prod,' 'food,' a color attribute based on food level, and a list of neighbors at a distance of 2 cells","grid vegetation_cell width: 50 height: 50 neighbors: 4 {
+	float max_food <- 1.0;
+	float food_prod <- rnd(0.01);
+	float food <- rnd(1.0) max: max_food update: food + food_prod;
+	rgb color <- rgb(int(255 * (1 - food)), 255, int(255 * (1 - food))) update: rgb(int(255 * (1 - food)), 255, int(255 * (1 - food)));
+	list<vegetation_cell> neighbors2  <- (self neighbors_at 2);
+}"
+"create a GAML code for a 40x40 'water_cell' grid with a 8-cell neighborhood. Include attributes 'water_level,' 'evaporation_rate,' and 'rainfall' updated with random values. Define a color based on food level and a list of neighbors at a distance of 2 cells.
+
+
+
+
+
+","grid water_cell width: 40 height: 40 neighbors: 8 {
+    float water_level <- 1.0;
+    float evaporation_rate <- rnd(0.01);
+    float rainfall <- rnd(1.0) max: water_level update: water_level - evaporation_rate + rainfall;
+    rgb color <- rgb(int(50 * (1 - water_level)), int(100 + 155 * water_level), int(50 * (1 - water_level))) update: rgb(int(50 * (1 - water_level)), int(100 + 155 * water_level), int(50 * (1 - water_level)));
+    list<water_cell> nearby_water_sources <- (self neighbors_at 1) if (each.water_level > 0.8);
+}"
+"Make me a grid 'air_quality_cell' 45x45, 8-cell neighborhood, 'pollutant_concentration' and 'pollutant_dispersion' updated randomly. Color based on concentration, and list of neighbors at 1-cell distance with concentration > 0.5.","grid air_quality_cell width: 45 height: 45 neighbors: 8 {
+    float pollutant_concentration <- rnd(0.1);
+    float pollutant_dispersion <- rnd(0.01);
+    pollutant_concentration <- pollutant_concentration - pollutant_dispersion;
+    rgb color <- rgb(int(255 * (1 - pollutant_concentration)), int(255 * pollutant_concentration), int(255 * (1 - pollutant_concentration)));
+    list<air_quality_cell> polluted_neighbors <- (self neighbors_at 1) if (each.pollutant_concentration > 0.5);
+}"
+"Modify herbivore species to resemble 'prey_bird': 'max_energy,' 'max_transfer,' 'energy_consum,' 'proba_reproduce,' 'nb_max_offsprings,' 'energy_reproduce,' #green color. Add conditional 'energy_from_eat' on food and 'choose_cell' method for max food neighboring cell. Replace icon with 'deer.png' from '../includes/data/'.","species herbivore parent: generic_species {
+        rgb color <- #green;
+        float max_energy <- herbivore_max_energy;
+        float max_transfer <- herbivore_max_transfer;
+        float energy_consum <- herbivore_energy_consum;
+        float proba_reproduce <- herbivore_proba_reproduce;
+        int nb_max_offsprings <- herbivore_nb_max_offsprings;
+        float energy_reproduce <- herbivore_energy_reproduce;
+        image_file my_icon <- image_file(""../includes/data/deer.png"");
+
+        float energy_from_eat {
+                float energy_transfer <- 0.0;
+                if(my_cell.food > 0) {
+                        energy_transfer <- min([max_transfer, my_cell.food]);
+                        my_cell.food <- my_cell.food - energy_transfer;
+                }                         
+                return energy_transfer;
+        }
+
+        vegetation_cell choose_cell {
+                return (my_cell.neighbors2) with_max_of (each.food);
+        }
+}"
+"Modify 'prey_bird' species: 'max_energy,' 'max_transfer,' 'energy_consum,' 'proba_reproduce,' 'nb_max_offsprings,' 'energy_reproduce,' #yellow color. Include conditional 'energy_from_eat' on food and 'choose_cell' method for selecting max food neighboring cell. Replace icon with 'bird.png' from '../includes/data/'.","species prey_bird parent: generic_species {
+        rgb color <- #yellow;
+        float max_energy <- prey_bird_max_energy;
+        float max_transfer <- prey_bird_max_transfer;
+        float energy_consum <- prey_bird_energy_consum;
+        float proba_reproduce <- prey_bird_proba_reproduce;
+        int nb_max_offsprings <- prey_bird_nb_max_offsprings;
+        float energy_reproduce <- prey_bird_energy_reproduce;
+        image_file my_icon <- image_file(""../includes/data/bird.png"");
+
+        float energy_from_eat {
+                float energy_transfer <- 0.0;
+                if(my_cell.food > 0) {
+                        energy_transfer <- min([max_transfer, my_cell.food]);
+                        my_cell.food <- my_cell.food - energy_transfer;
+                }                         
+                return energy_transfer;
+        }
+
+        vegetation_cell choose_cell {
+                return (my_cell.neighbors2) with_max_of (each.food);
+        }
+}"
+"make for me a 'prey' species: 'max_energy,' 'max_transfer,' 'energy_consum,' 'proba_reproduce,' 'nb_max_offsprings,' 'energy_reproduce,' #blue color. Include conditional 'energy_from_eat' on food and 'choose_cell' method for selecting max food neighboring cell. Replace icon with 'sheep.png' from '../includes/data/'.","species prey parent: generic_species {
+        rgb color <- #blue;
+        float max_energy <- prey_max_energy;
+        float max_transfer <- prey_max_transfer;
+        float energy_consum <- prey_energy_consum;
+        float proba_reproduce <- prey_proba_reproduce;
+        int nb_max_offsprings <- prey_nb_max_offsprings;
+        float energy_reproduce <- prey_energy_reproduce;
+        image_file my_icon <- image_file(""../includes/data/sheep.png"");
+
+        float energy_from_eat {
+                float energy_transfer <- 0.0;
+                if(my_cell.food > 0) {
+                        energy_transfer <- min([max_transfer, my_cell.food]);
+                        my_cell.food <- my_cell.food - energy_transfer;
+                }                         
+                return energy_transfer;
+        }
+
+        vegetation_cell choose_cell {
+                return (my_cell.neighbors2) with_max_of (each.food);
+        }
+}"
+"create a GAML code for 'prey_bird': 'max_energy,' 'max_transfer,' 'energy_consum,' 'proba_reproduce,' 'nb_max_offsprings,' 'energy_reproduce,' #yellow color. Conditional 'energy_from_eat' on food. Method 'choose_cell' selects max food neighboring cell. Icon: 'bird.png' from '../includes/data/'.","species prey_bird parent: generic_species {
+	rgb color <- #yellow;
+	float max_energy <- prey_bird_max_energy, max_transfer <- prey_bird_max_transfer, energy_consum <- prey_bird_energy_consum, proba_reproduce <- prey_bird_proba_reproduce;
+	int nb_max_offsprings <- prey_bird_nb_max_offsprings;
+	float energy_reproduce <- prey_bird_energy_reproduce;
+	image_file my_icon <- image_file(""../includes/data/bird.png"");
+
+	float energy_from_eat {
+		return (my_cell.food > 0) ? min([max_transfer, my_cell.food]) : 0.0;
+	}
+
+	vegetation_cell choose_cell {
+		return (my_cell.neighbors2) with_max_of (each.food);
+	}
+}"
+"Create a GAML code snippet for the parent species ""generic_species"" with shared attributes. Other species inheriting from ""generic_species"" can access these common attributes.","species generic_species {
+	float size <- 1.0;
+        rgb color;
+        float max_energy;
+        float energy_consum; 
+        float proba_reproduce;
+        float energy_reproduce;
+        int nb_max_offsprings;
+        image_file my_icon;
+        vegetation_cell my_cell <- one_of(vegetation_cell);
+        float energy <- rnd(max_energy) update: energy - energy_consum max: max_energy;
+
+        init {
+                location <- my_cell.location;
+        }
+
+        reflex basic_move {
+                my_cell <- choose_cell();
+                location <- my_cell.location;
+        }
+
+        reflex eat {
+                energy <- energy + energy_from_eat();                
+        }
+
+        reflex die when: energy <= 0 {
+                do die;
+        }
+
+        reflex reproduce when: (energy >= energy_reproduce) and (flip(proba_reproduce)) {
+                int nb_offsprings <- rnd(1, nb_max_offsprings);
+                create species(self) number: nb_offsprings {
+                        my_cell <- myself.my_cell;
+                        location <- my_cell.location;
+                        energy <- myself.energy / nb_offsprings;
+                }
+
+                energy <- energy / nb_offsprings;
+        }
+
+        float energy_from_eat {
+                return 0.0;
+        }
+
+        vegetation_cell choose_cell {
+                return nil;
+        }
+        aspect icon {
+                draw my_icon size: 2 * size;
+        }
+
+        aspect info {
+                draw square(size) color: color;
+                draw string(energy with_precision 2) size: 3 color: #black;
+        }
+}
+"
+"Create a GAML code snippet for the parent species ""cars"" with shared attributes. Other species inheriting from ""cars"" can access these common attributes.","species cars {
+    float size <- 1.0;
+    rgb color;
+    float max_speed;
+    float acceleration;
+    float proba_reproduce;
+    float energy_reproduce;
+    int nb_max_offsprings;
+    road_cell my_cell <- one_of(road_cell);
+    float energy <- rnd(max_energy) update: energy - energy_consum max: max_energy;
+
+    init {
+        location <- my_cell.location;
+    }
+
+    reflex move {
+        my_cell <- choose_cell();
+        location <- my_cell.location;
+    }
+
+    reflex refuel when: energy <= max_energy / 2 {
+        energy <- energy + energy_refuel();
+    }
+
+    reflex die when: energy <= 0 {
+        do die;
+    }
+
+    reflex reproduce when: (energy >= energy_reproduce) and (flip(proba_reproduce)) {
+        int nb_offsprings <- rnd(1, nb_max_offsprings);
+        create species(self) number: nb_offsprings {
+            my_cell <- myself.my_cell;
+            location <- my_cell.location;
+            energy <- myself.energy / nb_offsprings;
+        }
+        energy <- energy / nb_offsprings;
+    }
+
+    float energy_refuel {
+        return max_energy - energy;
+    }
+
+    road_cell choose_cell {
+        return nil; // Replace with your logic for choosing a road cell
+    }
+
+    aspect info {
+        draw square(size) color: color;
+        draw string(energy with_precision 2) size: 3 color: #black;
+    }
+}
+"
+"generate parent species named boat in GAML which contains all common attributes of ""boat"" for other species with type boat to inheritant","species boats  {
+    float size <- 1.0;
+    rgb color;
+    float max_speed, acceleration, proba_reproduce, energy_reproduce;
+    int nb_max_offsprings;
+    water_cell my_cell <- one_of(water_cell);
+    float energy <- rnd(max_energy) update: energy - energy_consum max: max_energy;
+
+    init {
+        location <- my_cell.location;
+    }
+
+    reflex move {
+        my_cell <- choose_cell();
+        location <- my_cell.location;
+    }
+
+    reflex refuel when: energy <= max_energy / 2 {
+        energy <- energy + energy_refuel();
+    }
+
+    reflex die when: energy <= 0 {
+        do die;
+    }
+
+    reflex reproduce when: (energy >= energy_reproduce) and (flip(proba_reproduce)) {
+        int nb_offsprings <- rnd(1, nb_max_offsprings);
+        create species(self) number: nb_offsprings {
+            my_cell <- myself.my_cell;
+            location <- my_cell.location;
+            energy <- myself.energy / nb_offsprings;
+        }
+        energy <- energy / nb_offsprings;
+    }
+
+    float energy_refuel {
+        return max_energy - energy;
+    }
+
+    water_cell choose_cell {
+        return nil; // Replace with your logic for choosing a water cell
+    }
+
+    aspect icon {
+        draw my_icon size: 2 * size;
+    }
+
+    aspect info {
+        draw square(size) color: color;
+        draw string(energy with_precision 2) size: 3 color: #black;
+    }
+}"
+generate species that inheritant species boat,"species speedboat parent: boat {
+    rgb color <- #blue; // Customize the color for speedboats
+    float max_speed <- 30.0; // Customize the maximum speed for speedboats
+    float acceleration <- 5.0; // Customize the acceleration for speedboats
+
+    reflex accelerate {
+        max_speed <- min([max_speed + acceleration, 50.0]); // Adjust the acceleration logic as needed
+    }
+
+    reflex decelerate {
+        max_speed <- max([max_speed - acceleration, 0.0]); // Adjust the deceleration logic as needed
+    }
+
+    water_cell choose_cell {
+        // Implement specific logic for choosing a water cell for speedboats
+        return nil;
+    }
+}"
+"provide a GAML code snippet for a ""taxi"" species that inherits from the parent species ""car"". Customize attributes such as color, maximum speed, and acceleration for taxis. Additionally, implement specific behaviors like honking and choosing a road cell for taxis.","species taxi parent: car {
+    rgb color <- #yellow; // Customize the color for taxis
+    float max_speed <- 20.0; // Customize the maximum speed for taxis
+    float acceleration <- 3.0; // Customize the acceleration for taxis
+
+    reflex honk {
+        // Implement specific logic for honking for taxis
+        // For example, play a honking sound or increase energy consumption
+    }
+
+    road_cell choose_cell {
+        // Implement specific logic for choosing a road cell for taxis
+        return nil;
+    }
+}"
+"make a GAML code snippet for a ""truck"" species inheriting from the parent species ""car""? Please customize attributes such as color, maximum speed, acceleration, and cargo capacity for trucks. Additionally, implement specific behaviors like cargo loading, cargo unloading, and choosing a road cell for trucks.","species truck parent: car {
+    rgb color <- #gray; // Customize the color for trucks
+    float max_speed <- 15.0; // Customize the maximum speed for trucks
+    float acceleration <- 2.0; // Customize the acceleration for trucks
+    float cargo_capacity <- 100.0; // Customize the cargo capacity for trucks
+
+    reflex load_cargo {
+        // Implement specific logic for loading cargo into trucks
+        // Adjust energy consumption or other parameters accordingly
+    }
+
+    reflex unload_cargo {
+        // Implement specific logic for unloading cargo from trucks
+        // Adjust energy consumption or other parameters accordingly
+    }
+
+    road_cell choose_cell {
+        // Implement specific logic for choosing a road cell for trucks
+        return nil;
+    }
+}"
+"give me a GAML code snippet name nissan inheritant from species name ""car""","species nissan parent: car {
+    rgb color <- #silver; // Customize the color for Nissans
+    float max_speed <- 25.0; // Customize the maximum speed for Nissans
+    float acceleration <- 4.0; // Customize the acceleration for Nissans
+
+    reflex play_music {
+        // Implement specific logic for playing music in Nissans
+        // Adjust energy consumption or other parameters accordingly
+    }
+
+    road_cell choose_cell {
+        // Implement specific logic for choosing a road cell for Nissans
+        return nil;
+    }
+}"
+give me a full model code snippet in GAML for example,"model prey_predator
+global {
+        int nb_preys_init <- 150; // Fewer initial preys
+        init {
+                create prey number: nb_preys_init;
+        }
+}
+
+species prey {
+        float size <- 1.0;
+        rgb color <- #blue;
+                 
+        aspect base {
+                draw circle(size) color: color;
+        }
+} 
+
+experiment prey_predator_5 type: gui {
+        parameter ""Initial number of preys: "" var: nb_preys_init min: 1 max: 1000 category: ""Prey"";
+        output {
+                display main_display {
+                        species prey aspect: base;
+                }
+        }
+}"
+generate a model name 'cars_simulation' in GAML,"model cars_simulation
+
+global {
+        int nb_cars_init <- 30; // Fewer initial cars
+        init {
+                create car number: nb_cars_init;
+        }
+}
+
+species car {
+        float size <- 1.0;
+        rgb color <- #yellow;
+                
+        aspect base {
+                draw rectangle(size, size/2) color: color;
+        }
+} 
+
+experiment cars_simulation_4 type: gui {
+        parameter ""Initial number of cars: "" var: nb_cars_init min: 1 max: 500 category: ""Cars"";
+        output {
+                display main_display {
+                        species car aspect: base;
+                }
+        }
+}
+"
+give me a model name 'city_traffic_simulation' in GAML,"model city_traffic_simulation
+
+global {
+        int nb_cars_init <- 40; // Adjusted initial cars
+        init {
+                create car number: nb_cars_init;
+        }
+}
+
+species car {
+        float size <- 1.0;
+        rgb color <- #purple; // Different color
+                
+        aspect base {
+                draw rectangle(size, size/2) color: color;
+        }
+} 
+
+experiment city_traffic_simulation type: gui {
+        parameter ""Initial number of cars: "" var: nb_cars_init min: 1 max: 500 category: ""Cars"";
+        output {
+                display main_display {
+                        species car aspect: base;
+                }
+        }
+}"
+make model that modeling air pollution data in GAML,"model air_pollution
+
+global {
+        int nb_pollutants_init <- 5; // Initial number of pollutants
+        init {
+                create pollutant number: nb_pollutants_init;
+        }
+}
+
+species pollutant {
+        float size <- 1.0;
+        rgb color <- #gray; // Color representing pollutants
+                
+        aspect base {
+                draw circle(size) color: color;
+        }
+} 
+
+experiment air_pollution_simulation type: gui {
+        parameter ""Initial number of pollutants: "" var: nb_pollutants_init min: 1 max: 100 category: ""Pollutants"";
+        output {
+                display main_display {
+                        species pollutant aspect: base;
+                }
+        }
+}"
+make a model in GAML to simulate data to manage the number of sick people,"model sickness_spread
+
+global {
+        int nb_people_init <- 50; // Initial number of people
+        init {
+                create person number: nb_people_init;
+        }
+}
+
+species person {
+        float size <- 1.0;
+        rgb color <- #red; // Color representing people
+                
+        aspect base {
+                draw circle(size) color: color;
+        }
+} 
+
+experiment sickness_spread_simulation type: gui {
+        parameter ""Initial number of people: "" var: nb_people_init min: 1 max: 500 category: ""People"";
+        output {
+                display main_display {
+                        species person aspect: base;
+                }
+        }
+}"
+"from model sickness_spread in GAML before, make species 'mosquito'","model sickness_spread
+
+global {
+        int nb_people_init <- 50; // Initial number of people
+        int nb_mosquitoes_init <- 20; // Initial number of mosquitoes
+        init {
+                create person number: nb_people_init;
+                create mosquito number: nb_mosquitoes_init;
+        }
+}
+
+species person {
+        float size <- 1.0;
+        rgb color <- #red; // Color representing people
+                
+        aspect base {
+                draw circle(size) color: color;
+        }
+} 
+
+species mosquito {
+        float size <- 0.5;
+        rgb color <- #brown; // Color representing mosquitoes
+                
+        aspect base {
+                draw circle(size) color: color;
+        }
+} 
+
+experiment sickness_spread_simulation type: gui {
+        parameter ""Initial number of people: "" var: nb_people_init min: 1 max: 500 category: ""People"";
+        parameter ""Initial number of mosquitoes: "" var: nb_mosquitoes_init min: 1 max: 100 category: ""Mosquitoes"";
+        output {
+                display main_display {
+                        species person aspect: base;
+                        species mosquito aspect: base;
+                }
+        }
+}"
+"from the previous model air_pollution in GAML, make a species 'car'","model air_pollution_simulation
+
+global {
+        int nb_pollutants_init <- 5; // Initial number of pollutants
+        int nb_cars_init <- 10; // Initial number of cars
+        init {
+                create pollutant number: nb_pollutants_init;
+                create car number: nb_cars_init;
+        }
+}
+
+species pollutant {
+        float size <- 1.0;
+        rgb color <- #gray; // Color representing pollutants
+                
+        aspect base {
+                draw circle(size) color: color;
+        }
+} 
+
+species car {
+        float size <- 1.0;
+        rgb color <- #blue; // Color representing cars
+                
+        aspect base {
+                draw rectangle(size, size/2) color: color;
+        }
+} 
+
+experiment air_pollution_simulation type: gui {
+        parameter ""Initial number of pollutants: "" var: nb_pollutants_init min: 1 max: 100 category: ""Pollutants"";
+        parameter ""Initial number of cars: "" var: nb_cars_init min: 1 max: 50 category: ""Cars"";
+        output {
+                display main_display {
+                        species pollutant aspect: base;
+                        species car aspect: base;
+                }
+        }
+}"
+make a model prey in GAML. Define species prey and an environment with vegetation for it to simulate its environment in real life,"model prey
+
+global {
+        int nb_preys_init <- 200;
+        init {
+                create prey number: nb_preys_init;
+        }
+}
+
+species prey {
+        float size <- 1.0;
+        rgb color <- #blue;
+        vegetation_cell my_cell <- one_of (vegetation_cell);
+                
+        init {
+                location <- my_cell.location;
+        }
+
+        aspect base {
+                draw circle(size) color: color;
+        }
+}
+
+grid vegetation_cell width: 50 height: 50 neighbors: 4 {
+        float max_food <- 1.0;
+        float food_prod <- rnd(0.01);
+        float food <- rnd(1.0) max: max_food update: food + food_prod;
+        rgb color <- rgb(int(255 * (1 - food)), 255, int(255 * (1 - food))) update: rgb(int(255 * (1 - food)), 255, int(255 * (1 - food)));
+}
+
+experiment prey_predator type: gui {
+        parameter ""Initial number of preys: "" var: nb_preys_init min: 1 max: 1000 category: ""Prey"";
+        output {
+                display main_display {
+                        grid vegetation_cell border: #black;
+                        species prey aspect: base;
+                }
+        }
+}"
+"from a pollution model bafore, generate a grid name 'pollution_cell' to evaluate pollution on each area in GAML","model pollution
+
+global {
+        int nb_pollutants_init <- 50;
+        init {
+                create pollutant number: nb_pollutants_init;
+        }
+}
+
+species pollutant {
+        float size <- 1.0;
+        rgb color <- #gray;
+        pollution_cell my_cell <- one_of(pollution_cell);
+                
+        init {
+                location <- my_cell.location;
+        }
+
+        aspect base {
+                draw circle(size) color: color;
+        }
+}
+
+grid pollution_cell width: 50 height: 50 neighbors: 4 {
+        float max_pollution <- 1.0;
+        float pollution_prod <- rnd(0.01);
+        float pollution <- rnd(1.0) max: max_pollution update: pollution + pollution_prod;
+        rgb color <- rgb(int(255 * pollution), int(255 * (1 - pollution)), 0) update: rgb(int(255 * pollution), int(255 * (1 - pollution)), 0);
+}
+
+experiment pollution type: gui {
+        parameter ""Initial number of pollutants: "" var: nb_pollutants_init min: 1 max: 500 category: ""Pollutants"";
+        output {
+                display main_display {
+                        grid pollution_cell border: #black;
+                        species pollutant aspect: base;
+                }
+        }
+}"
+make a prey model which they can move aroung a grid name 'vegetation_cell' and eat vegetable from it in GAML code,"model prey
+global {
+        int nb_preys_init <- 200;
+        float prey_max_energy <- 1.0;
+        float prey_max_transfer <- 0.1;
+        float prey_energy_consum <- 0.05;
+        
+        init {
+                create prey number: nb_preys_init;
+        }
+}
+
+species prey {
+        float size <- 1.0;
+        rgb color <- #blue;
+        float max_energy <- prey_max_energy;
+        float max_transfer <- prey_max_transfer;
+        float energy_consum <- prey_energy_consum;
+                
+        vegetation_cell my_cell <- one_of (vegetation_cell); 
+        float energy <- rnd(max_energy)  update: energy - energy_consum max: max_energy;
+                
+        init { 
+                location <- my_cell.location;
+        }
+
+        reflex basic_move {
+                my_cell <- one_of(my_cell.neighbors2);
+                location <- my_cell.location;
+        }
+        reflex eat when: my_cell.food > 0 { 
+                float energy_transfer <- min([max_transfer, my_cell.food]);
+                my_cell.food <- my_cell.food - energy_transfer;
+                energy <- energy + energy_transfer;
+        }
+        reflex die when: energy <= 0 {
+                do die;
+        }
+
+        aspect base {
+                draw circle(size) color: color;
+        }
+}
+
+grid vegetation_cell width: 50 height: 50 neighbors: 4 {
+        float max_food <- 1.0;
+        float food_prod <- rnd(0.01);
+        float food <- rnd(1.0) max: max_food update: food + food_prod;
+        rgb color <- rgb(int(255 * (1 - food)), 255, int(255 * (1 - food))) update: rgb(int(255 * (1 - food)), 255, int(255 * (1 - food)));
+        list<vegetation_cell> neighbors2  <- (self neighbors_at 2);
+}
+
+experiment prey_predator type: gui {
+        parameter ""Initial number of preys: "" var: nb_preys_init min: 1 max: 1000 category: ""Prey"";
+        parameter ""Prey max energy: "" var: prey_max_energy category: ""Prey"";
+        parameter ""Prey max transfer: "" var: prey_max_transfer  category: ""Prey"";
+        parameter ""Prey energy consumption: "" var: prey_energy_consum  category: ""Prey"";
+        output {
+                display main_display {
+                        grid vegetation_cell border: #black;
+                        species prey aspect: base;
+                }
+        }
+}
+"
+"make a model name water_pollution by GAML, and species name vehicles in it. The more vehicles move around the grid, the more pollution in the neighborhood becomes worse. the rate of pollution bases on the density of the cell grid i","model water_pollution
+
+global {
+        int nb_vehicles_init <- 10;
+        float vehicle_max_movement <- 2.0;
+        float vehicle_pollution_rate <- 0.02;
+        
+        init {
+                create vehicle number: nb_vehicles_init;
+        }
+}
+
+species vehicle {
+        float size <- 0.7;
+        rgb color <- #black;
+        float max_movement <- vehicle_max_movement;
+        float pollution_rate <- vehicle_pollution_rate;
+                
+        pollution_cell my_cell <- one_of (pollution_cell); 
+
+        reflex move {
+                my_cell <- one_of(my_cell.neighbors2);
+                location <- my_cell.location;
+                my_cell.pollution <- my_cell.pollution + pollution_rate;
+        }
+
+        aspect base {
+                draw circle(size) color: color;
+        }
+}
+
+grid pollution_cell width: 50 height: 50 neighbors: 4 {
+        float max_pollution <- 1.0;
+        float pollution <- rnd(0.5) max: max_pollution;
+        rgb color <- rgb(int(255 * pollution), int(255 * (1 - pollution)), 255) update: rgb(int(255 * pollution), int(255 * (1 - pollution)), 255);
+        list<pollution_cell> neighbors2  <- (self neighbors_at 2);
+}
+
+experiment pollution type: gui {
+        parameter ""Initial number of vehicles: "" var: nb_vehicles_init min: 1 max: 100 category: ""Vehicles"";
+        parameter ""Vehicle max movement: "" var: vehicle_max_movement category: ""Vehicles"";
+        parameter ""Vehicle pollution rate: "" var: vehicle_pollution_rate  category: ""Vehicles"";
+        output {
+                display main_display {
+                        grid pollution_cell border: #black;
+                        species vehicle aspect: base;
+                }
+        }
+}"
+make a model name deforestation simulate the deforestation from reality by GAML,"model deforestation
+
+global {
+        int nb_trees_init <- 50;
+        float tree_growth_rate <- 0.02;
+        
+        init {
+                create tree number: nb_trees_init;
+        }
+}
+
+species tree {
+        float size <- 1.0;
+        rgb color <- #green;
+        float growth_rate <- tree_growth_rate;
+                
+        soil_cell my_cell <- one_of(soil_cell); 
+
+        reflex grow {
+                size <- size + growth_rate;
+        }
+
+        aspect base {
+                draw circle(size) color: color;
+        }
+}
+
+grid soil_cell width: 50 height: 50 neighbors: 4 {
+        rgb color <- #brown;
+        list<soil_cell> neighbors2  <- (self neighbors_at 2);
+}
+
+experiment deforestation type: gui {
+        parameter ""Initial number of trees: "" var: nb_trees_init min: 1 max: 100 category: ""Trees"";
+        parameter ""Tree growth rate: "" var: tree_growth_rate category: ""Trees"";
+        output {
+                display main_display {
+                        grid soil_cell border: #black;
+                        species tree aspect: base;
+                }
+        }
+}
+"
+make a model simulate industrial waste by factory and people by GAML code,"model industrial_waste_with_people
+
+global {
+        int nb_factories_init <- 5;
+        int nb_people_init <- 50;
+        float factory_pollution_rate <- 0.04;
+        float people_movement_rate <- 0.03;
+        
+        init {
+                create factory number: nb_factories_init;
+                create people number: nb_people_init;
+        }
+}
+
+species factory {
+        float size <- 1.0;
+        rgb color <- #gray;
+        float pollution_rate <- factory_pollution_rate;
+                
+        water_cell my_cell <- one_of(water_cell); 
+
+        reflex pollute {
+                my_cell <- one_of(my_cell.neighbors2);
+                my_cell.water_pollution <- my_cell.water_pollution + pollution_rate;
+        }
+
+        aspect base {
+                draw circle(size) color: color;
+        }
+}
+
+species people {
+        float size <- 0.7;
+        rgb color <- #yellow;
+        float movement_rate <- people_movement_rate;
+                
+        water_cell my_cell <- one_of(water_cell); 
+
+        reflex move {
+                my_cell <- one_of(my_cell.neighbors2);
+                location <- my_cell.location;
+        }
+
+        aspect base {
+                draw circle(size) color: color;
+        }
+}
+
+grid water_cell width: 50 height: 50 neighbors: 4 {
+        float max_water_pollution <- 1.0;
+        float water_pollution <- rnd(0.5) max: max_water_pollution;
+        rgb color <- rgb(int(255 * water_pollution), int(255 * (1 - water_pollution)), 255) update: rgb(int(255 * water_pollution), int(255 * (1 - water_pollution)), 255);
+        list<water_cell> neighbors2  <- (self neighbors_at 2);
+}
+
+experiment industrial_waste_with_people type: gui {
+        parameter ""Initial number of factories: "" var: nb_factories_init min: 1 max: 20 category: ""Factories"";
+        parameter ""Factory pollution rate: "" var: factory_pollution_rate category: ""Factories"";
+        parameter ""Initial number of people: "" var: nb_people_init min: 1 max: 100 category: ""People"";
+        parameter ""People movement rate: "" var: people_movement_rate category: ""People"";
+        output {
+                display main_display {
+                        grid water_cell border: #black;
+                        species factory aspect: base;
+                        species people aspect: base;
+                }
+        }
+}
+"
+make a industrial model to simulation pollution made by factory in GAML,"model industrial_emissions
+
+global {
+        int nb_factories_init <- 5;
+        float factory_pollution_rate <- 0.04;
+        
+        init {
+                create factory number: nb_factories_init;
+        }
+}
+
+species factory {
+        float size <- 1.0;
+        rgb color <- #gray;
+        float pollution_rate <- factory_pollution_rate;
+                
+        air_cell my_cell <- one_of(air_cell); 
+
+        reflex emit_pollution {
+                my_cell <- one_of(my_cell.neighbors2);
+                my_cell.air_pollution <- my_cell.air_pollution + pollution_rate;
+        }
+
+        aspect base {
+                draw circle(size) color: color;
+        }
+}
+
+grid air_cell width: 50 height: 50 neighbors: 4 {
+        float max_air_pollution <- 1.0;
+        float air_pollution <- rnd(0.5) max: max_air_pollution;
+        rgb color <- rgb(int(255 * air_pollution), int(255 * (1 - air_pollution)), 255) update: rgb(int(255 * air_pollution), int(255 * (1 - air_pollution)), 255);
+        list<air_cell> neighbors2  <- (self neighbors_at 2);
+}
+
+experiment industrial_emissions type: gui {
+        parameter ""Initial number of factories: "" var: nb_factories_init min: 1 max: 20 category: ""Factories"";
+        parameter ""Factory pollution rate: "" var: factory_pollution_rate category: ""Factories"";
+        output {
+                display main_display {
+                        grid air_cell border: #black;
+                        species factory aspect: base;
+                }
+        }
+}"

@@ -1,0 +1,39 @@
+[
+  {
+    "question": "Can you provide a code snippet that includes the 'building' and 'road' species with their respective attributes and aspects?",
+    "answer": "species building {\n string type;\n rgb color <- #gray;\n\n aspect base {\n draw shape color: color;\n }\n}\n\nspecies road {\n rgb color <- #black;\n\n aspect base {\n draw shape color: color;\n }\n}"
+  },
+  {
+    "question": "Can you provide a code snippet that includes the definition of the three global variables for the GIS shapefiles?",
+    "answer": "global {\n file shape_file_buildings <- file(\"../includes/building.shp\");\n file shape_file_roionads <- file(\"../includes/road.shp\");\n file shape_file_bounds <- file(\"../includes/bounds.shp\");\n}"
+  },
+  {
+    "question": "Can you provide a code snippet that includes the 'road_traffic' experiment block with the three input parameters for GIS shapefiles?",
+    "answer": "experiment road_traffic type: gui {\n parameter \"Shapefile for the buildings:\" var: shape_file_buildings category: \"GIS\" ;\n parameter \"Shapefile for the roads:\" var: shape_file_roads category: \"GIS\" ;\n parameter \"Shapefile for the bounds:\" var: shape_file_bounds category: \"GIS\" ;\n}"
+  },
+  {
+    "question": "Can you provide a code snippet that includes the 'init' block with the creation of 'building' and 'road' agents based on shapefiles?",
+    "answer": "global {\n ...\n init {\n create building from: shape_file_buildings with: [type::read (\"NATURE\")] {\n if type=\"Industrial\" {\n color <- #blue ;\n }\n }\n create road from: shape_file_roads ;\n }\n}"
+  },
+  {
+    "question": "Share a code snippet featuring the 'setup' section, initializing 'residential_areas' and 'commercial_areas' based on predefined shapes.",
+    "answer": "setup {\n create residential_areas from: residential_shapefile ;\n create commercial_areas from: commercial_shapefile ;\n}\n"
+  },
+  {
+    "question": "Present a GAML code snippet with the 'configuration' block, setting up 'natural_resources' and 'urban_zones' based on specific parameters.",
+    "answer": "configuration {\n create natural_resources with: [type::read(\"Forests\")];\n create urban_zones with: [type::read(\"Commercial\")];\n}\n"
+  },
+  {
+    "question": "Generate a GAML code snippet within the 'preprocessing' block, creating 'water_bodies' and 'parks' entities from predefined datasets.",
+    "answer": "preprocessing {\n create water_bodies from: water_bodies_shapefile ;\n create parks from: parks_shapefile ;\n}\n"
+  },
+  {
+    "question": "Craft a GAML code snippet under the 'initialization' section, establishing 'educational_buildings' and 'medical_facilities' based on specified shapefiles.",
+    "answer": "initialization {\n create educational_buildings from: educational_shapefile ;\n create medical_facilities from: medical_shapefile ;\n}\n"
+  },
+  {
+    "question": "Provide a GAML code snippet featuring the 'generation' block, initializing 'agricultural_zones' and 'industrial_zones' from predefined datasets.",
+    "answer": "generation {\n create agricultural_zones from: agricultural_shapefile ;\n create industrial_zones from: industrial_shapefile ;\n}\n"
+  }
+]
+

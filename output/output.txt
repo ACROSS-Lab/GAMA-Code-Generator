@@ -1,0 +1,23 @@
+make me a model with species named "fish", fish colour will be yellow 1. Create a new species called `fish` in the `models` directory of your project.
+2. Define the color of the fish as `#yellow`.
+3. In the `init` block, create an instance of the `fish` species and set its location to `{x: 0, y: 0}`.
+4. Use the `draw` block to define how the fish is displayed visually. In this case, we'll use a simple circle shape with a radius of 5 pixels. The color of the circle should be determined by the `color` attribute of the fish (which was previously defined as `#yellow`).
+
+Here's what the code might look like:
+
+```kotlin
+species fish {
+    float size <- 1.0;
+    rgb color <- #yellow;
+    
+    init {
+        create fish {
+            location <- { x: 0, y: 0 };
+        }
+    }
+    
+    draw circle(size) color: color;
+}
+```
+
+This code creates a `fish` species with a default size of 1.0 and a yellow color. It initializes a single fish at the origin of the world. When drawing the fish, it simply draws a circle with a radius equal to its size and a yellow color. This results in a simple representation of a fish that can be used in simulations or visualizations.

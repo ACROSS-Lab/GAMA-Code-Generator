@@ -1,0 +1,9 @@
+Create a GAML model name air_pollution to simulate air pollution in reality
+Generate for me a GAML code snippet that have a species called "people"
+make me a model with species named "fish", fish colour will be yellow
+generate a GAML code snippet to show how to use while loop
+make a GAML code snippet contains random species
+provid a GAML code snippet that generate message "Hello World"
+create a grid of cells size 15x15 in GAML
+write me a model that display traffic jam in GAML
+
