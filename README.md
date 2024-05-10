@@ -22,6 +22,10 @@ The right Figure above illustrates that when given a consistent prompt input, Ch
 Users can follow this instructions for performing inference.
 
 #### Step 1: Create environment
+Download this repo 
+```
+git clone https://github.com/ACROSS-Lab/GAMA-Code-Generator.git
+```
 We need an environment since some ertain specific libraries can only be installed within an environment.
 
 Feel free to utilize either a Python environment or a Conda environment based on your preference. 
@@ -41,4 +45,6 @@ Following the environment installation, activate it and install the required lib
 cd path/to/directory/GAMA-Code-Generator
 pip install -r requirements.txt
 ```
+
+####
 
