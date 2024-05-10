@@ -1,5 +1,11 @@
 # GAMA-Code-Generator
 
-```py
-global {}
-```
+## Overview 
+
+
+## Purpose
+
+
+## Implementation
+
+
