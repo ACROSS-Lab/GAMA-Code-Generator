@@ -12,7 +12,7 @@ Inspired by ChatGPT and other prominent AI tools, its objective is to facilitate
 
 ![](https://github.com/ACROSS-Lab/GAMA-Code-Generator/blob/main/assets/comparison-img.png)
 
-The upper Figure (on the right)  demonstrates that when using a consistent prompt input, ChatGPT (one of the most infamous NLP tool) tends to produce inferior responses in the case of the GAML language (and GAML language only). 
+The right Figure above illustrates that when given a consistent prompt input, ChatGPT typically yields subpar responses specifically for the GAML language. Conversely, tools equipped with our fine-tuned for this purpose tend to produce significantly more accurate results.
 
 ## Implementation
 
