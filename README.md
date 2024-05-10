@@ -1,5 +1,5 @@
 # GAMA-Code-Generator
-
+------
 ## Overview 
 Meet GAMA-GPT, a text-to-code model specifically engineered to produce high-quality GAML code snippets in response to user input prompts. 
 
@@ -17,7 +17,10 @@ Inspired by ChatGPT and other prominent AI tools, its objective is to facilitate
 The right Figure above illustrates that when given a consistent prompt input, ChatGPT typically yields subpar responses specifically for the GAML language. Conversely, tools equipped with our fine-tuned for this purpose tend to produce significantly more accurate results.
 
 ## Implementation
-------
-### For  
+
+### For Inference
+Users can follow this instructions for performing inference.
+
+#### Step 1: Create environment
 
 
