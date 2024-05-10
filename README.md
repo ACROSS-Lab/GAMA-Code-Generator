@@ -22,7 +22,12 @@ The right Figure above illustrates that when given a consistent prompt input, Ch
 Users can follow this instructions for performing inference.
 
 #### Step 1: Create environment
+We need an environment since some ertain specific libraries can only be installed within an environment.
+
 Feel free to utilize either a Python environment or a Conda environment based on your preference. 
-- For Conda environment, you can follow instructions from  `miniconda`(https://docs.anaconda.com/free/miniconda/index.html) to install and cheatsheet(https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf)
+
+- For Conda, you can follow instructions from  [`miniconda`](https://docs.anaconda.com/free/miniconda/index.html) to install Conda environment and [cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf) to use it.
+
+- For Python environment, follow 
 
 
