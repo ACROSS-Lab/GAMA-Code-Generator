@@ -36,4 +36,10 @@ python -m venv gamagpt-chatbot
 source gamagpt-chatbot/bin/activate #for ubuntu
 gamagpt-chatbot/Scripts/activate #for windows
 ```
+#### Step 2: Install libraries
+Following the environment installation, activate it and install the required libraries by running:
+```
+cd path/to/directory/GAMA-Code-Generator
+pip install -r requirements.txt
+```
 
