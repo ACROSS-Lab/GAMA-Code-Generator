@@ -21,12 +21,12 @@ The right Figure above illustrates that when given a consistent prompt input, Ch
 ### For Inference
 Users can follow this instructions for performing inference.
 
-#### Step 1: Create environment
-Markup :- 1.1 Download this repo 
+#### 1. Create environment
+        1. Download this repo 
         ```
         git clone https://github.com/ACROSS-Lab/GAMA-Code-Generator.git
         ```
-        - 1.2 We need an environment since some ertain specific libraries can only be installed within an environment.
+        2. We need an environment since some ertain specific libraries can only be installed within an environment.
 Feel free to utilize either a Python environment or a Conda environment based on your preference. 
 
           - For Conda:
