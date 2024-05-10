@@ -26,8 +26,10 @@ We need an environment since some ertain specific libraries can only be installe
 
 Feel free to utilize either a Python environment or a Conda environment based on your preference. 
 
-- For Conda, you can follow instructions from  [`miniconda`](https://docs.anaconda.com/free/miniconda/index.html) to install Conda environment and [cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf) to use it.
+- For Conda:
+You can follow instructions from  [miniconda](https://docs.anaconda.com/free/miniconda/index.html) website to install Conda environment and [cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf) to use it.
 
-- For Python environment, follow 
+- For Python environment
+Follow bellow instructs
 
 
