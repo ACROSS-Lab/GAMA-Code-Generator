@@ -31,5 +31,9 @@ You can follow instructions from  [miniconda](https://docs.anaconda.com/free/min
 
 - For Python environment
 Follow bellow instructs
-
+```
+python -m venv gamagpt-chatbot
+source gamagpt-chatbot/bin/activate #for ubuntu
+gamagpt-chatbot/Scripts/activate #for windows
+```
 
