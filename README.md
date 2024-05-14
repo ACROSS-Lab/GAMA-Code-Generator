@@ -36,12 +36,12 @@ Feel free to utilize either a Python environment or a Conda environment based on
           source gamagpt-chatbot/bin/activate #for ubuntu
           gamagpt-chatbot/Scripts/activate #for windows
           ```
-####3. Install libraries
+#### 3. Install libraries
 Following the environment installation, activate it and install the required libraries by running:
 ```
 cd path/to/directory/GAMA-Code-Generator
 pip install -r requirements.txt
 ```
 
-####
+#### 4. Run inference on your local machine
 
