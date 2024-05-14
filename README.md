@@ -28,13 +28,13 @@ git clone https://github.com/ACROSS-Lab/GAMA-Code-Generator.git
 #### 2. Create environment
 We need an environment since some ertain specific libraries can only be installed within an environment.
 Feel free to utilize either a Python environment or a Conda environment based on your preference. 
-        i. For Conda:
+        - **1. For Conda:**
           You can follow instructions from  [miniconda](https://docs.anaconda.com/free/miniconda/index.html) website to install Conda environment and [cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf) to use it.
-        ii. For Python environment, follow bellow instructs
+        - **2. For Python environment, follow bellow instructs**
           ```
           python -m venv gamagpt-chatbot
-          source gamagpt-chatbot/bin/activate #for ubuntu
-          gamagpt-chatbot/Scripts/activate #for windows
+          source gamagpt-inference/bin/activate #for ubuntu
+          gamagpt-inference/Scripts/activate #for windows
           ```
 #### 3. Install libraries
 Following the environment installation, activate your environment and install the required libraries by running:
@@ -43,8 +43,10 @@ cd path/to/directory/GAMA-Code-Generator
 pip install -r requirements.txt
 ```
 > [!NOTE]
-> - We suggest setting up an environment to successfully complete this project, including fine-tuning the model with your own datasets and formatting it to GGUF format for building a web/app product.
+> - We suggest setting up an environment to successfully complete this whole project, including fine-tuning the model with your own datasets and formatting it to GGUF format for building a web/app product.
 > - Each part of the project will require installation of multiple libraries, and there may be conflicts between them.
 > - Using environments will get rid of confliction between libraries.
 #### 4. Run inference on your local machine
-
+`bash
+python \path\to\
+`
