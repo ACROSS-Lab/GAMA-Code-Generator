@@ -32,7 +32,6 @@ Feel free to utilize either a Python environment or a Conda environment based on
   - **i. For Conda:**
           You can follow instructions from  [miniconda](https://docs.anaconda.com/free/miniconda/index.html) website to install Conda environment and [cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf) to use it or follow below instruct for fast create and activate Conda environment:
 ```
-
 conda create --name gamagpt-inference            # create environment named gamagpt-inference
 conda activate gamagpt-inference            # activate conda environment
 conda deactivate          # if you want to use other environments or just don't want to stay on this environment
