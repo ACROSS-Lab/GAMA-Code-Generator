@@ -21,18 +21,16 @@ The right Figure above illustrates that when given a consistent prompt input, Ch
 ### For Inference
 Users can follow this instructions for performing inference.
 
-#### 1. Create environment
+####1. Create environment
         1. Download this repo 
         ```
         git clone https://github.com/ACROSS-Lab/GAMA-Code-Generator.git
         ```
         2. We need an environment since some ertain specific libraries can only be installed within an environment.
 Feel free to utilize either a Python environment or a Conda environment based on your preference. 
-
-          - For Conda:
+                1. For Conda:
           You can follow instructions from  [miniconda](https://docs.anaconda.com/free/miniconda/index.html) website to install Conda environment and [cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf) to use it.
-          
-          - For Python environment, follow bellow instructs
+                2. For Python environment, follow bellow instructs
   ```
   python -m venv gamagpt-chatbot
   source gamagpt-chatbot/bin/activate #for ubuntu
