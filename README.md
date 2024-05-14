@@ -29,9 +29,9 @@ git clone https://github.com/ACROSS-Lab/GAMA-Code-Generator.git
 We need an environment since some ertain specific libraries can only be installed within an environment.
 Feel free to utilize either a Python environment or a Conda environment based on your preference.
 
-  - **1. For Conda:**
+  - **i. For Conda:**
           You can follow instructions from  [miniconda](https://docs.anaconda.com/free/miniconda/index.html) website to install Conda environment and [cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf) to use it.
-  - **2. For Python environment, follow bellow instructs**\
+  - **ii. For Python environment**, follow bellow instructs:
 ```
 python -m venv gamagpt-chatbot
 source gamagpt-inference/bin/activate #for ubuntu
