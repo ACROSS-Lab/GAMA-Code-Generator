@@ -53,6 +53,6 @@ pip install -r requirements.txt
 > - Each part of the project will require installation of multiple libraries, and there may be conflicts between them.
 > - Using environments will get rid of confliction between libraries.
 #### 4. Run inference on your local machine
-`bash
+```bash
 python /path/to/inference/command-line-inference.py
-`
+```
