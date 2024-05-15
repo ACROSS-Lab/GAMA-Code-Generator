@@ -45,7 +45,7 @@ gamagpt-inference/Scripts/activate #for windows
 #### 3. Install libraries
 Following the environment installation, activate your environment and install the required libraries by running:
 ```
-cd path/to/directory/GAMA-Code-Generator
+cd path/to/GAMA-Code-Generator
 pip install -r requirements.txt
 ```
 > [!NOTE]
