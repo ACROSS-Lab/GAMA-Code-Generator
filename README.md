@@ -1,5 +1,5 @@
 # GAMA-Code-Generator
-------
+
 ## Overview 
 Meet GAMA-GPT, a text-to-code model specifically engineered to produce high-quality GAML code snippets in response to user input prompts. 
 
