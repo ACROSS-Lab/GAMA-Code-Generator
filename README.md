@@ -1,4 +1,7 @@
 # GAMA-Code-Generator
+<p align="center">
+  <img src="[Models on HuggingFace](https://github.com/ACROSS-Lab/GAMA-Code-Generator/blob/main/assets/hf-logo-with-title.svg)" />
+</p>
 
 ## Overview 
 Meet GAMA-GPT, a text-to-code model specifically engineered to produce high-quality GAML code snippets in response to user input prompts. 
