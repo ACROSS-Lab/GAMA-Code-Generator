@@ -9,7 +9,6 @@ Derived from Mistral-Instruct-v2.0 and fine-tuned for optimal performance, this 
 ## Purpose
 This project **_aims to create a text-to-code model designed specifically for generating GAML language in response to user questions_**. 
 
-------
 Inspired by ChatGPT and other prominent AI tools, its objective is to facilitate the generation of code snippets tailored to the GAML language. **_This model strives to enhance the learning experience for newcomers to GAML programming by providing intuitive assistance._** Additionally, for users seeking to utilize GAML for their tasks without delving deeply into programming, this model offers a helpful solution for generating code.
 
 ![](https://github.com/ACROSS-Lab/GAMA-Code-Generator/blob/main/assets/comparison-img.png)
