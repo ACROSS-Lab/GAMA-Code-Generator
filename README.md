@@ -71,5 +71,5 @@ python ./gradio-inference.py
 ```
 - **ii. Or you can run it on Google Colab/Jupyter Notebook** by following each steps in file named `gradio-inference.ipynb` or `prompting-format-gradio-interface` in `./inference/ipynb` directory. 
 
-
+------
 ## Finetuning use your own data
