@@ -52,7 +52,10 @@ pip install -r requirements.txt
 > - We suggest setting up an environment to successfully complete this whole project, including fine-tuning the model with your own datasets and formatting it to GGUF format for building a web/app product.
 > - Each part of the project will require installation of multiple libraries, and there may be conflicts between them.
 > - Using environments will get rid of confliction between libraries.
-#### 4. Run inference on your local machine
-```bash
-python /path/to/inference/command-line-inference.py
+#### 4. Run inference
+You can have 2 options
+- **i. Run straight on your local machine**
 ```
+python /path/to/inference/python/command-line-inference.py
+```
+- **ii. Or you can run it on Google Colab/Jupyter Notebook** by follow each steps in in `ipynb` file named `peft-inference.ipynb` in `./inference/ipynb` directory. 
