@@ -52,7 +52,7 @@ pip install -r requirements.txt
 > - We suggest setting up an environment to successfully complete this whole project, including fine-tuning the model with your own datasets and formatting it to GGUF format for building a web/app product.
 > - Each part of the project will require installation of multiple libraries, and there may be conflicts between them.
 > - Using environments will get rid of confliction between libraries.
-
+------
 ### Run inference
 You can have 2 options
 - **i. Run straight on your local machine**
