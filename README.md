@@ -19,6 +19,8 @@ The right Figure above illustrates that when given a consistent prompt input, Ch
 
 ## For Simple Inference
 Users can follow this instructions for performing inference.
+
+------
 ### Requirements
 #### 1. Download this project 
 ```
@@ -63,3 +65,8 @@ python /path/to/inference/python/command-line-inference.py
 
 ------
 ## For Chatbot Interface
+- **i. Run straight on your local machine**
+```
+python ./gradio-inference.py
+```
+- **ii. Or you can run it on Google Colab/Jupyter Notebook** by following each steps in file named `gradio-inference.ipynb` or `prompt-inference-gradio.ipynb` in `./inference/ipynb` directory. 
