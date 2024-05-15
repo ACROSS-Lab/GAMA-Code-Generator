@@ -59,3 +59,6 @@ You can have 2 options
 python /path/to/inference/python/command-line-inference.py
 ```
 - **ii. Or you can run it on Google Colab/Jupyter Notebook** by follow each steps in in `ipynb` file named `peft-inference.ipynb` in `./inference/ipynb` directory. 
+
+------
+### For Chatbot Interface
