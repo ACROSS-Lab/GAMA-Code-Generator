@@ -17,7 +17,7 @@ The right Figure above illustrates that when given a consistent prompt input, Ch
 
 ## Implementation
 
-### For Inference
+### For Simple Inference
 Users can follow this instructions for performing inference.
 #### 1. Download this project 
 ```
