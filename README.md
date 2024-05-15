@@ -1,6 +1,6 @@
 # GAMA-Code-Generator
 <p align="center">
-  <img src="[Models on HuggingFace](https://github.com/ACROSS-Lab/GAMA-Code-Generator/blob/main/assets/hf-logo-with-title.svg)" />
+  <img src="https://github.com/ACROSS-Lab/GAMA-Code-Generator/blob/main/assets/hf-logo-with-title.svg" />
 </p>
 
 ## Overview 
