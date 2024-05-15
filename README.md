@@ -17,7 +17,7 @@ The right Figure above illustrates that when given a consistent prompt input, Ch
 
 ------
 
-## For Simple Inference
+## Simple Inference and Chatbot Interface
 Users can follow this instructions for performing inference.
 
 ------
@@ -64,7 +64,7 @@ python /path/to/inference/python/command-line-inference.py
 - **ii. Or you can run it on Google Colab/Jupyter Notebook** by following each steps in file named `peft-inference.ipynb` in `./inference/ipynb` directory. 
 
 ------
-## For Chatbot Interface
+### Run Chatbot Interface
 - **i. Run straight on your local machine**
 ```
 python ./gradio-inference.py
