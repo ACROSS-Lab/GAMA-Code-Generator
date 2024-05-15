@@ -18,9 +18,9 @@ The right Figure above illustrates that when given a consistent prompt input, Ch
 ------
 
 ## Simple Inference and Chatbot Interface
-Users can follow this instructions for performing inference.
+Users can follow this instructions for performing inference or run your Chatbot interface.
 
-------
+
 ### Requirements
 #### 1. Download this project 
 ```
