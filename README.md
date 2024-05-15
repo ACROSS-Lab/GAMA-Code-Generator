@@ -15,10 +15,11 @@ Inspired by ChatGPT and other prominent AI tools, its objective is to facilitate
 
 The right Figure above illustrates that when given a consistent prompt input, ChatGPT typically yields subpar responses specifically for the GAML language. Conversely, tools equipped with our fine-tuned for this purpose tend to produce significantly more accurate results.
 
-## Implementation
 
-### For Simple Inference
+
+## For Simple Inference
 Users can follow this instructions for performing inference.
+### Requirements
 #### 1. Download this project 
 ```
 git clone https://github.com/ACROSS-Lab/GAMA-Code-Generator.git
@@ -60,4 +61,4 @@ python /path/to/inference/python/command-line-inference.py
 - **ii. Or you can run it on Google Colab/Jupyter Notebook** by following each steps in file named `peft-inference.ipynb` in `./inference/ipynb` directory. 
 
 ------
-### For Chatbot Interface
+## For Chatbot Interface
