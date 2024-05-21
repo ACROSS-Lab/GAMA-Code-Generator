@@ -1,0 +1,112 @@
+:root {
+    --light-grey: #818181;
+    --grey: #1B1B1D;
+    --dark-grey: #282A36;
+    --orange: #D36737;
+    --blue: #3271A1;
+    --yellow: #EEB64F;
+    --white: #EBEDF0;
+  }
+  
+  *, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    background: var(--grey);
+    display: flex;
+    justify-content: center;
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","CourierNew",monospace;
+    color: var(--white);
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1 {
+    margin: 1rem auto;
+  }
+  
+  .area-container {
+    display: flex;
+  }
+  
+  .item {
+    margin: 0 1em;
+  }
+  
+  .title {
+    margin: 10px 0;
+  }
+  
+  .content {
+    resize: none;
+    background-color: var(--dark-grey);
+    color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: .4rem;
+    width: 500px;
+    height: 300px;
+  }
+  
+  .content:focus {
+    outline: none;
+    border: 2px solid var(--orange);
+    box-shadow: 0 0 4px var(--orange);
+  }
+  
+  #warning-msg {
+    margin: .2rem 1rem;
+  }
+  
+  .btn-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #submit-btn {
+    font-size: 1.5rem;
+    margin: 2.5px .7em;
+    border-radius: .4rem;
+    padding: .5rem 2.6rem;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0);
+    color: var(--light-grey);
+    border: 1px solid var(--light-grey);
+    transition-duration: .1s;
+  }
+  
+  #submit-btn:enabled {
+    color: var(--orange);
+    border: 1px solid var(--orange);
+  }
+  
+  
+  #submit-btn:hover:enabled {
+    background-color: var(--orange);
+    color: black;
+    cursor: pointer;
+  }
+  
+  
+  /* GAML code COLORS */
+  .gaml-param {
+    color: #F39F3A;
+  }
+  
+  .keyword {
+    color: #CC6C1D;
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width: 1300px) {
+    .area-container {
+      flex-direction: column;
+    }
+  }

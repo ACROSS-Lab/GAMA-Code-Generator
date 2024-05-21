@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Mistral Gama v1.0</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- <script type="module" src="https://md-block.verou.me/md-block.js"></script> -->
+<div class="wrapper">
+  <h1>GAML prompt creator</h1>
+  <div class="area-container">
+    <div class="item">
+      <h2 class="title">Request</h2>
+      <textarea name="" id="question-area" cols="50" rows="30" class="content"></textarea>
+    </div>
+  
+    <div class="item">
+      <h2 class="title">Answer</h2>
+      <textarea name="" id="answer-area" cols="50" rows="30" class="content"></textarea>
+    </div>
+  </div>
+  
+  <p id="warning-msg">Add your question to generate answer</p>
+  
+  <div class="btn-container">
+     <button id="submit-btn" disabled>Generate</button>
+  </div>
+  
+</div>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
