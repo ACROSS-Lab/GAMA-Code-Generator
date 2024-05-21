@@ -75,4 +75,8 @@ python ./gradio-inference.py
 - **ii. Or you can run it on Google Colab/Jupyter Notebook** by following each steps in file named `gradio-inference.ipynb` or `prompting-format-gradio-interface.ipynb` in `./inference/ipynb` directory. 
 
 ------
+### Deploy your own chatbot with streamlit
+
+
 ## Finetuning use your own data
+If you want to fine-tuned Mistral-Instruct-v2.0 with your own data using Reinforcement Learning Human Feedback pipeline, please go to `tutorials` for more information.
