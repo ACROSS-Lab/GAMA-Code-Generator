@@ -4,8 +4,7 @@
     <br>
 </p>
 
---------
-[![🚀**Little Demo with GAMAChatbot**](https://github.com/ACROSS-Lab/GAMA-Code-Generator/blob/main/assets/DemoGAMABOT.png)](https://www.youtube.com/watch?v=7m-WpGrlJ0U)
+
 --------
 > [!NOTE]
 > - This project is built by fine-tuning [Mistral-7B-Instruct-v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2) on a GAML Code dataset created by members of ACROSS-Lab
@@ -13,6 +12,9 @@
 >   - 🤗 [**GAMA-Code-Generator-v1.0**](https://huggingface.co/Phanh2532/GAMA-Code-generator-v1.0) 
 >   - 🤗 [**GAMA-Code-Generator-v2.0**](https://huggingface.co/Phanh2532/GAMA-Code-generator-v2.0) - (trained with DPO - a novel approach which share the same idea with Reinforcement Learning Human Feedback)
 >   - ⭐[**Dataset**](https://huggingface.co/datasets/Phanh2532/GAML-Data) - (520 pairs of question - answer about GAML language)
+
+--------
+[![🚀**Little Demo with GAMAChatbot**](https://github.com/ACROSS-Lab/GAMA-Code-Generator/blob/main/assets/DemoGAMABOT.png)](https://www.youtube.com/watch?v=7m-WpGrlJ0U)
 
 --------
 ## Overview 
@@ -62,7 +64,7 @@ gamagpt-inference/Scripts/activate   // for windows
 #### 3. Install libraries
 Following the environment installation, activate your environment and install the required libraries by running:
 ```
-cd path/to/GAMA-Code-Generator
+cd path/to/GAMABot
 pip install -r requirements.txt
 ```
 > [!NOTE]
