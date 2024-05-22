@@ -3,6 +3,9 @@
 > - [_GAMA-Code-Generator-v1.0_](https://huggingface.co/Phanh2532/GAMA-Code-generator-v1.0) 
 > - [_GAMA-Code-Generator-v2.0_](https://huggingface.co/Phanh2532/GAMA-Code-generator-v2.0) _(trained with DPO - a novel approach which share the same idea with Reinforcement Learning Human Feedback)_
 > - _Dataset_
+--------
+![Watch the video](https://github.com/ACROSS-Lab/GAMA-Code-Generator/blob/main/assets/little-demo.webm)
+
 ## Overview 
 Meet GAMA-GPT, a text-to-code model specifically engineered to produce high-quality GAML code snippets in response to user input prompts. 
 
