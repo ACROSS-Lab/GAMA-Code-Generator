@@ -1,12 +1,12 @@
-# GAMA-Code-Generator
+# GAMABOT
 > [!NOTE]
 > - [_GAMA-Code-Generator-v1.0_](https://huggingface.co/Phanh2532/GAMA-Code-generator-v1.0) 
 > - [_GAMA-Code-Generator-v2.0_](https://huggingface.co/Phanh2532/GAMA-Code-generator-v2.0) _(trained with DPO - a novel approach which share the same idea with Reinforcement Learning Human Feedback)_
 > - _Dataset_
 --------
 
-[![Watch the video]()](https://www.youtube.com/watch?v=7m-WpGrlJ0U)
-
+[![🚀***Little Demo with GAMAChatbot***](https://github.com/ACROSS-Lab/GAMA-Code-Generator/blob/main/assets/DemoGAMABOT.png)](https://www.youtube.com/watch?v=7m-WpGrlJ0U)
+--------
 ## Overview 
 Meet GAMA-GPT, a text-to-code model specifically engineered to produce high-quality GAML code snippets in response to user input prompts. 
 
@@ -74,12 +74,11 @@ python /path/to/inference/python/command-line-inference.py
 ### Run Chatbot Interface
 - **i. Run straight on your local machine**
 ```
-python ./gradio-inference.py
+python ./app/gradio-app.py
 ```
 - **ii. Or you can run it on Google Colab/Jupyter Notebook** by following each steps in file named `gradio-inference.ipynb` or `prompting-format-gradio-interface.ipynb` in `./inference/ipynb` directory. 
 
 ------
-### Deploy your own chatbot with streamlit
 
 
 ## Finetuning use your own data
