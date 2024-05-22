@@ -33,7 +33,7 @@ Users can follow this instructions for performing inference or run your Chatbot 
 ### Requirements
 #### 1. Download this project 
 ```
-git clone https://github.com/ACROSS-Lab/GAMA-Code-Generator.git
+git clone https://github.com/ACROSS-Lab/GAMABot.git
 ```
 
 #### 2. Create environment
