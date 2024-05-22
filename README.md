@@ -1,6 +1,6 @@
 <p align="center">
     <br>
-    <img src="https://github.com/ACROSS-Lab/GAMABot/blob/main/assets/logo.png" width="600"/>
+    <img src="https://github.com/ACROSS-Lab/GAMABot/blob/main/assets/logo.png" width="600" height="175"/>
     <br>
 </p>
 
