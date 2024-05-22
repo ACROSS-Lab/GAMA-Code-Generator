@@ -4,6 +4,7 @@
     <br>
 </p>
 --------
+
 [![🚀**Little Demo with GAMAChatbot**](https://github.com/ACROSS-Lab/GAMA-Code-Generator/blob/main/assets/DemoGAMABOT.png)](https://www.youtube.com/watch?v=7m-WpGrlJ0U)
 --------
 > [!NOTE]
