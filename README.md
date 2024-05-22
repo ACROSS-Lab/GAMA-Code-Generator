@@ -92,4 +92,6 @@ python ./app/gradio-app.py
 
 
 ## Finetuning use your own data
-If you want to fine-tuned Mistral-Instruct-v2.0 with your own data using Reinforcement Learning Human Feedback pipeline, please go to `./tutorials` for more information.
+> [!NOTE]
+> - For more detailed information about the pipeline, each stage, and in-depth knowledge about how it works, please follow the tutorials in the `tutorials` directory.
+> - Or you can follow these steps down below to automatically fine-tuned `Mistral-Instruct-7B-v2.0` model. 
