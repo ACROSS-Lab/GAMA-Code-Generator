@@ -5,7 +5,7 @@
 > - _Dataset_
 --------
 
-[![Watch the video]()](https://github.com/ACROSS-Lab/GAMA-Code-Generator/blob/main/assets/little-demo.webm)
+[![Watch the video]()](https://www.youtube.com/watch?v=7m-WpGrlJ0U)
 
 ## Overview 
 Meet GAMA-GPT, a text-to-code model specifically engineered to produce high-quality GAML code snippets in response to user input prompts. 
