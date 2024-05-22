@@ -1,6 +1,6 @@
 <p align="center">
     <br>
-    <img src="https://github.com/ACROSS-Lab/GAMABot/blob/main/assets/logo.png" width="1000" height="175"/>
+    <img src="https://github.com/ACROSS-Lab/GAMABot/blob/main/assets/logo.png" width="1000" height="150"/>
     <br>
 </p>
 
@@ -67,7 +67,7 @@ Following the environment installation, activate your environment and install th
 cd path/to/GAMABot
 pip install -r requirements.txt
 ```
-> [!NOTE]
+> [!IMPORTANT]
 > - We suggest setting up an environment to successfully complete this whole project, including fine-tuning the model with your own datasets and formatting it to GGUF format for building a web/app product.
 > - Each part of the project will require installation of multiple libraries, and there may be conflicts between them.
 > - Using environments will get rid of confliction between libraries.
