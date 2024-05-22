@@ -4,8 +4,9 @@
 > - This project is built by fine-tuning [Mistral-7B-Instruct-v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2) on a GAML Code dataset created by members of ACROSS-Lab
 > - Curently there are 2 version of model you can choose to deploy your own GAMABot
 >   - 🚀[**GAMA-Code-Generator-v1.0**](https://huggingface.co/Phanh2532/GAMA-Code-generator-v1.0) 
->   - 🚀[**GAMA-Code-Generator-v2.0**_](https://huggingface.co/Phanh2532/GAMA-Code-generator-v2.0) _(trained with DPO - a novel approach which share the same idea with Reinforcement Learning Human Feedback)_
+>   - 🚀[**GAMA-Code-Generator-v2.0**_(trained with DPO - a novel approach which share the same idea with Reinforcement Learning Human Feedback)_](https://huggingface.co/Phanh2532/GAMA-Code-generator-v2.0) 
 >   - ⭐[**Dataset**](https://huggingface.co/datasets/Phanh2532/GAML-Data)
+>     - 520 pairs of question - answer about GAML language
 
 --------
 
