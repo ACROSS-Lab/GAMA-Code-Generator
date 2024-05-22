@@ -68,7 +68,7 @@ pip install -r requirements.txt
 You can have 2 options
 - **i. Run straight on your local machine**
 ```
-python /path/to/inference/python/command-line-inference.py
+python ./inference/python/command-line-inference.py
 ```
 - **ii. Or you can run it on Google Colab/Jupyter Notebook** by following each steps in file named `peft-inference.ipynb` in `./inference/ipynb` directory. 
 
@@ -84,4 +84,4 @@ python ./app/gradio-app.py
 
 
 ## Finetuning use your own data
-If you want to fine-tuned Mistral-Instruct-v2.0 with your own data using Reinforcement Learning Human Feedback pipeline, please go to `tutorials` for more information.
+If you want to fine-tuned Mistral-Instruct-v2.0 with your own data using Reinforcement Learning Human Feedback pipeline, please go to `./tutorials` for more information.
