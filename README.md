@@ -52,15 +52,15 @@ Feel free to utilize either a Python environment or a Conda environment based on
   - **i. For Conda:**
           You can follow instructions from  [miniconda](https://docs.anaconda.com/free/miniconda/index.html) website to install Conda environment and [cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf) to use it or follow below instruct for fast create and activate Conda environment:
 ```
-conda create --name gamagpt-inference            // create environment named gamagpt-inference
-conda activate gamagpt-inference            // activate conda environment
-conda deactivate          // if you want to use other environments or just don't want to stay on this environment
+conda create --name gamagpt-inference            # create environment named gamagpt-inference (change the name to your preference)
+conda activate gamagpt-inference            # activate conda environment
+conda deactivate          # if you want to use other environments or just don't want to stay on this environment
 ``` 
   - **ii. For Python environment**, follow bellow instructs:
 ```
 python -m venv gamagpt-chatbot
-source gamagpt-inference/bin/activate   // for ubuntu
-gamagpt-inference/Scripts/activate   // for windows
+source gamagpt-inference/bin/activate       # for ubuntu
+gamagpt-inference/Scripts/activate       # for windows
 ```
 #### 3. Install libraries
 Following the environment installation, activate your environment and install the required libraries by running:
@@ -96,8 +96,14 @@ python ./app/gradio-app.py
 > [!NOTE]
 > - For more detailed information about the pipeline, each stage, and in-depth knowledge about how it works, please follow the tutorials in the `tutorials` directory.
 > - Or you can follow these steps down below to automatically fine-tuned `Mistral-Instruct-7B-v2.0` model.
+-------
+> Before proceeding, follow the `Create environment` instructions to create a new environment for fine-tuning and follow below instructions
+> ```
+> cd /path/to/GAMABot/train/
+> pip install -r requirements.txt        
+> ```
+> Now you're all good! Let's finetune model to your preference
 
-------
 ### Create your own dataset
 
 
@@ -106,8 +112,40 @@ python ./app/gradio-app.py
 ### Finetune Model
 Run this in your terminal
 ```
-cd ./GAMABot
+cd /path/to/GAMABot
 chmod u+x ./finetune.sh
 ./finetune.sh                   # automatically train Mistral-Instruct-7B-v0.2 on 1 gpu
 ./finetune-multi-gpus.sh        # automatically train Mistral-Instruct-7B-v0.2 on multiple gpus
+```
+By running the bash script files, you have already trained the model using the parameters I provided. These parameters were set up as follows:
+```py
+BASE_MODEL_ID="meta-llama/Meta-Llama-3-8B-Instruct"
+LOAD_IN_4BIT=true
+BNB_4BIT_USE_DOUBLE_QUANT=true
+BNB_4BIT_QUANT_TYPE="nf4"
+BNB_4BIT_COMPUTE_DTYPE="bfloat16"
+TRAIN_DATA_PATH="/home/phuong-anh/gama/data/train/json/total.json"
+EVAL_DATA_PATH="/home/phuong-anh/gama/data/eval/eval.json"
+WANDB_PROJECT="gamaft-total"
+OUTPUT_DIR="./trained-model/llama/"
+WARMUP_STEPS=1
+PER_DEVICE_TRAIN_BATCH_SIZE=2
+PER_GPU_TRAIN_BATCH_SIZE=2
+AUTO_FIND_BATCH_SIZE=true
+GRADIENT_ACCUMULATION_STEPS=1
+GRADIENT_CHECKPOINTING=true
+MAX_STEPS=5
+NUM_TRAIN_EPOCHS=3
+LEARNING_RATE=2e-5
+FP16=true
+OPTIM="paged_adamw_8bit"
+LOGGING_STEPS=50
+LOGGING_DIR='./logs'
+SAVE_STRATEGY="steps"
+SAVE_STEPS=5
+EVALUATION_STRATEGY="steps"
+EVAL_STEPS=50
+DO_EVAL=true
+OVERWRITE_OUTPUT_DIR=false
+REPORT_TO="wandb"
 ```
