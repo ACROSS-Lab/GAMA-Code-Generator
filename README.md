@@ -103,7 +103,7 @@ eval_prompt = "Create a GAML code snippet inspired by water pollution in real li
 
 model_input = eval_tokenizer(eval_prompt, return_tensors="pt").to("cuda")
 with torch.no_grad():
-    print(eval_tokenizer.decode(model.generate(**model_input, max_new_tokens=2000, repetition_penalty=1.15)[0], skip_special_tokens=True))
+    print(eval_tokenizer.decode(model.generate(**model_input, max_new_tokens=512, repetition_penalty=1.15)[0], skip_special_tokens=True))
     print('----------------------------------------------------------------------')
 ```
 - **ii. Run straight on your local machine**
