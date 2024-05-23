@@ -94,8 +94,8 @@ python ./app/gradio-app.py
 
 ## Finetuning use your own dataset
 > [!NOTE]
-> - For more detailed information about the pipeline, each stage, and in-depth knowledge about how it works, please follow the tutorials in the `tutorials` directory.
-> - Or you can follow these steps down below to automatically fine-tuned `Mistral-Instruct-7B-v2.0` model.
+> - *For more detailed information about the pipeline, each stage, and in-depth knowledge about how it works, please follow the tutorials in the `tutorials` directory.*
+> - Or you can follow these steps down below to do a fast fine-tuned with `Mistral-Instruct-7B-v2.0` model.
 -------
 > Before proceeding, follow the `Create environment` instructions to create a new environment for fine-tuning and follow below instructions
 > ```
@@ -117,35 +117,36 @@ chmod u+x ./finetune.sh
 ./finetune.sh                   # automatically train Mistral-Instruct-7B-v0.2 on 1 gpu
 ./finetune-multi-gpus.sh        # automatically train Mistral-Instruct-7B-v0.2 on multiple gpus
 ```
-By running the bash script files, you have already trained the model using the parameters I provided. These parameters were set up as follows:
+By running the bash script files, you have already trained the model using the parameters I provided. These parameters were set up as follows in `finetune.sh` and `finetune-multi-gpus.sh`:
 ```py
-BASE_MODEL_ID="meta-llama/Meta-Llama-3-8B-Instruct"
-LOAD_IN_4BIT=true
-BNB_4BIT_USE_DOUBLE_QUANT=true
+BASE_MODEL_ID="Mistral-Instruct-7B-v2.0"        # change this with HuggingFace repo id of your base model (could be LLama/Phi/etc.)
+LOAD_IN_4BIT=true                               # change this to false if you don't want to apply QLoRA while finetuning
+BNB_4BIT_USE_DOUBLE_QUANT=True                  
 BNB_4BIT_QUANT_TYPE="nf4"
 BNB_4BIT_COMPUTE_DTYPE="bfloat16"
-TRAIN_DATA_PATH="/home/phuong-anh/gama/data/train/json/total.json"
-EVAL_DATA_PATH="/home/phuong-anh/gama/data/eval/eval.json"
-WANDB_PROJECT="gamaft-total"
-OUTPUT_DIR="./trained-model/llama/"
+TRAIN_DATA_PATH="/path/to/your/train-data.json"    
+EVAL_DATA_PATH="/path/to/your/eval-data.json"
+WANDB_PROJECT="gamaft-total"            # change this if you don't want to use wanb 
+OUTPUT_DIR="/path/to/your/output/dir/"
 WARMUP_STEPS=1
 PER_DEVICE_TRAIN_BATCH_SIZE=2
 PER_GPU_TRAIN_BATCH_SIZE=2
 AUTO_FIND_BATCH_SIZE=true
 GRADIENT_ACCUMULATION_STEPS=1
-GRADIENT_CHECKPOINTING=true
+GRADIENT_CHECKPOINTING=True
 MAX_STEPS=5
 NUM_TRAIN_EPOCHS=3
 LEARNING_RATE=2e-5
 FP16=true
 OPTIM="paged_adamw_8bit"
 LOGGING_STEPS=50
-LOGGING_DIR='./logs'
+LOGGING_DIR='./logs'        
 SAVE_STRATEGY="steps"
 SAVE_STEPS=5
-EVALUATION_STRATEGY="steps"
+EVALUATION_STRATEGY="steps"    
 EVAL_STEPS=50
 DO_EVAL=true
-OVERWRITE_OUTPUT_DIR=false
-REPORT_TO="wandb"
+OVERWRITE_OUTPUT_DIR=false         
+REPORT_TO="wandb"        # comment this if you don't want to use wandb
 ```
+To know better about how parameters and its values will effect our model, please visit [HuggingFace Trainer Parameters Documentation](https://huggingface.co/docs/transformers/main_classes/trainer) for more details.
