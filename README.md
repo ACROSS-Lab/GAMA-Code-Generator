@@ -34,10 +34,7 @@ Inspired by ChatGPT and other prominent AI tools, its objective is to facilitate
 The right Figure above illustrates that when given a consistent prompt input, ChatGPT typically yields subpar responses specifically for the GAML language. Conversely, tools equipped with our fine-tuned for this purpose tend to produce significantly more accurate results.
 
 ------
-
-## 3. Simple Inference and Chatbot Interface
-Users can follow this instructions for performing inference or run your Chatbot interface.
-
+Users can follow this instructions for performing inference or run your chatbot interface.
 
 ### 3.1. Requirements
 #### 3.1.1. Download this project 
@@ -96,7 +93,8 @@ python ./app/gradio-app.py
 > [!NOTE]
 > - *For more detailed information about the pipeline, each stage, and in-depth knowledge about how it works, please follow the tutorials in the `tutorials` directory.*
 > - Or you can follow these steps down below to do a fast fine-tuned with `Mistral-Instruct-7B-v2.0` model.
--------
+> - Please keep in mind this part will only show how a fast way to finetune Mistral without apply DPO training on it.
+
 > Before proceeding, follow the `Create environment` instructions to create a new environment for fine-tuning and follow below instructions
 > ```
 > cd /path/to/GAMABot/train/
@@ -173,8 +171,9 @@ REPORT_TO="wandb"        # comment this if you don't want to use wandb
 ```
 To know better about how parameters and its values will effect our model, please visit [HuggingFace Trainer Parameters Documentation](https://huggingface.co/docs/transformers/main_classes/trainer) for more details.
 
-### 5. Run your model
-Run these python code
+### 5. Run your brand new model
+#### 5.1. Fast inference
+Copy and run these python code OR run `inference/command-line-inference.py` file (Remember to change the path of your model) to test your new model!
 ```py
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
@@ -208,3 +207,22 @@ with torch.no_grad():
     print('----------------------------------------------------------------------')
     #print(eval_tokenizer.decode(ft_model2.generate(**model_input, max_new_tokens=2000, repetition_penalty=1.15)[0], skip_special_tokens=True))
 ```
+
+The output should be somethink like this
+```
+Create a GAML model name air_pollution to simulate air pollution in reality. The model should include species such as cars, trucks, buses, and factories that emit pollutants into the air. Pollutants should be spread throughout the environment based on their emission rates from these species. Additionally, people can be introduced into the model to represent those affected by air pollution.
+
+experiment air_pollution type: gui {
+    parameter "Initial number of cars: " var: nb_cars_init min: 1 max: 1000 category: "Cars";
+    output {
+        display main_display {
+            species cars aspect: base;
+            species people aspect: base;
+        }
+    }
+}
+....
+```
+
+#### 5.2. Gradio app
+Edit `./app/gradio-app.py` and change the `model_id` with your HuggingFace repo_id of your model and then run it and you have your chatbot now.
