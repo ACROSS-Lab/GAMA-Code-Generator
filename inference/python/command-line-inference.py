@@ -39,7 +39,7 @@ def load_peft_model(model, tokenizer):
             model.eval()
             with torch.no_grad():
                 generated_text = tokenizer.decode(model.generate(**model_input_prompt,
-                                                    max_new_tokens=1042,
+                                                    max_new_tokens=512,
                                                     repetition_penalty=1.15)[0],
                                         skip_special_tokens=True)
                 print(generated_text)
