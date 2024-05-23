@@ -14,6 +14,9 @@
 >   - 🚀 [**Finetune Dataset**](https://huggingface.co/datasets/Phanh2532/GAML-Data) - 520 pairs of question - answer about GAML language
 >   - 🚀 [**Reward Dataset**](https://huggingface.co/datasets/Phanh2532/reward-GAML) - 149 pairs of question - answer about GAML language
 
+> [!IMPORTANT]
+>   - We recommend you guys to have a HuggingFace account for this project because this will improve the process SO much later since our models and datasets are public on HuggingFace. But still, this is optional
+
 --------
 [![🚀**Little Demo with GAMAChatbot**](https://github.com/ACROSS-Lab/GAMA-Code-Generator/blob/main/assets/DemoGAMABOT.png)](https://www.youtube.com/watch?v=7m-WpGrlJ0U)
 
@@ -226,3 +229,15 @@ experiment air_pollution type: gui {
 
 #### 5.2. Gradio app
 Edit `./app/gradio-app.py` and change the `model_id` with your HuggingFace repo_id of your model and then run it and you have your chatbot now.
+
+------
+## 6. Acknowledgement
+- [Mistral 7B](https://arxiv.org/pdf/2310.06825) 
+- [FINETUNED LANGUAGE MODELS ARE ZERO-SHOT LEARNERS](https://arxiv.org/pdf/2109.01652)
+- [Parameter-Efficient Fine-Tuning Methods for Pretrained Language Models: A Critical Review and Assessment](https://arxiv.org/pdf/2312.12148)
+- [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685)
+- [QLoRA: Efficient Finetuning of Quantized LLMs](https://arxiv.org/abs/2305.14314)
+- [DoRA: Weight-Decomposed Low-Rank Adaptation](https://arxiv.org/abs/2402.09353)
+- [Reinforcement Learning with Human Feedback: Learning Dynamic Choices via Pessimism](https://arxiv.org/pdf/2305.18438)
+- [Direct Preference Optimization: Your Language Model is Secretly a Reward Model](https://arxiv.org/pdf/2305.18290)
+
