@@ -9,9 +9,10 @@
 > [!NOTE]
 > - This project is built by fine-tuning [Mistral-7B-Instruct-v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2) on a GAML Code dataset created by members of ACROSS-Lab
 > - Curently there are 2 version of model you can choose to deploy your own GAMABot
->   - 🤗 [**GAMA-Code-Generator-v1.0**](https://huggingface.co/Phanh2532/GAMA-Code-generator-v1.0) 
->   - 🤗 [**GAMA-Code-Generator-v2.0**](https://huggingface.co/Phanh2532/GAMA-Code-generator-v2.0) - (trained with DPO - a novel approach which share the same idea with Reinforcement Learning Human Feedback)
->   - ⭐[**Dataset**](https://huggingface.co/datasets/Phanh2532/GAML-Data) - (520 pairs of question - answer about GAML language)
+>   - 🤗 [**GAMA-Code-Generator-v1.0**](https://huggingface.co/Phanh2532/GAMA-Code-generator-v1.0) - finetuned Mistral-7B-Instruct-v0.2 on Finetune Dataset
+>   - 🤗 [**GAMA-Code-Generator-v2.0**](https://huggingface.co/Phanh2532/GAMA-Code-generator-v2.0) - trained with DPO - a novel approach which share the same idea with Reinforcement Learning Human Feedback on Reward Dataset
+>   - 🚀 [**Finetune Dataset**](https://huggingface.co/datasets/Phanh2532/GAML-Data) - 520 pairs of question - answer about GAML language
+>   - 🚀 [**Reward Dataset**](https://huggingface.co/datasets/Phanh2532/reward-GAML) - 149 pairs of question - answer about GAML language
 
 --------
 [![🚀**Little Demo with GAMAChatbot**](https://github.com/ACROSS-Lab/GAMA-Code-Generator/blob/main/assets/DemoGAMABOT.png)](https://www.youtube.com/watch?v=7m-WpGrlJ0U)
@@ -91,7 +92,22 @@ python ./app/gradio-app.py
 ------
 
 
-## Finetuning use your own data
+## Finetuning use your own dataset
 > [!NOTE]
 > - For more detailed information about the pipeline, each stage, and in-depth knowledge about how it works, please follow the tutorials in the `tutorials` directory.
-> - Or you can follow these steps down below to automatically fine-tuned `Mistral-Instruct-7B-v2.0` model. 
+> - Or you can follow these steps down below to automatically fine-tuned `Mistral-Instruct-7B-v2.0` model.
+
+------
+### Create your own dataset
+
+
+
+------
+### Finetune Model
+Run this in your terminal
+```
+cd ./GAMABot
+chmod u+x ./finetune.sh
+./finetune.sh                   # automatically train Mistral-Instruct-7B-v0.2 on 1 gpu
+./finetune-multi-gpus.sh        # automatically train Mistral-Instruct-7B-v0.2 on multiple gpus
+```
