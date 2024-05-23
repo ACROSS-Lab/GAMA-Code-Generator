@@ -97,7 +97,7 @@ python ./app/gradio-app.py
 
 ## 4. Finetuning use your own dataset
 > [!NOTE]
-> - ***For more detailed information about the pipeline, each stage, and in-depth knowledge about how it works, please follow the tutorials in the `tutorials` directory or via [this link](https://github.com/ACROSS-Lab/GAMABot/tree/main/tutorials).***
+> - For more detailed information about the pipeline, each stage, and in-depth knowledge about how it works, please follow the tutorials in the `tutorials` directory or via [this link](https://github.com/ACROSS-Lab/GAMABot/tree/main/tutorials).
 
 
 > Before proceeding, follow the `Create environment` instructions to create a new environment for fine-tuning and follow below instructions
