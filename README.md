@@ -82,7 +82,7 @@ You can have 3 options
 ```py
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
-model_id = "Phanh2532/GAMA-Code-generator-v1.0"    # or path to your HuggingFace repo_id of your base model
+model_id = "Phanh2532/GAMA-Code-generator-v1.0"   
 bnb_config = BitsAndBytesConfig(
     load_in_4bit=True,
     bnb_4bit_use_double_quant=True,
@@ -92,7 +92,7 @@ bnb_config = BitsAndBytesConfig(
 
 model = AutoModelForCausalLM.from_pretrained(
     model_id, 
-    quantization_config=bnb_config,  # Same quantization config as before
+    quantization_config=bnb_config,  
     device_map="auto",
     trust_remote_code=True,
     use_auth_token=True
