@@ -18,14 +18,14 @@
 [![🚀**Little Demo with GAMAChatbot**](https://github.com/ACROSS-Lab/GAMA-Code-Generator/blob/main/assets/DemoGAMABOT.png)](https://www.youtube.com/watch?v=7m-WpGrlJ0U)
 
 --------
-## Overview 
-Meet GAMA-GPT, a text-to-code model specifically engineered to produce high-quality GAML code snippets in response to user input prompts. 
+## 1. Overview 
+Meet GAMA-GPT, a chatbot built from text-to-code model specifically engineered to produce high-quality GAML code snippets in response to user input prompts. 
 
 Derived from Mistral-Instruct-v2.0 and fine-tuned for optimal performance, this model boasts a rapid response time, typically returning a question in under 3 seconds. Notably, GAMA-GPT surpasses other widely-known AI tools like ChatGPT, POE, Gemini, BingAI, and StarCoder in the quality of GAML code it generates.
 
 
-## Purpose
-This project **_aims to create a text-to-code model designed specifically for generating GAML language in response to user questions_**. 
+## 2. Purpose
+This project **_aims to create a text-to-code model designed specifically for generating GAML language in response to user questions and a friendly interface for users_**. 
 
 Inspired by ChatGPT and other prominent AI tools, its objective is to facilitate the generation of code snippets tailored to the GAML language. **_This model strives to enhance the learning experience for newcomers to GAML programming by providing intuitive assistance._** Additionally, for users seeking to utilize GAML for their tasks without delving deeply into programming, this model offers a helpful solution for generating code.
 
@@ -35,17 +35,17 @@ The right Figure above illustrates that when given a consistent prompt input, Ch
 
 ------
 
-## Simple Inference and Chatbot Interface
+## 3. Simple Inference and Chatbot Interface
 Users can follow this instructions for performing inference or run your Chatbot interface.
 
 
-### Requirements
-#### 1. Download this project 
+### 3.1. Requirements
+#### 3.1.1. Download this project 
 ```
 git clone https://github.com/ACROSS-Lab/GAMABot.git
 ```
 
-#### 2. Create environment
+#### 3.1.2. Create environment
 We need an environment since some ertain specific libraries can only be installed within an environment.
 Feel free to utilize either a Python environment or a Conda environment based on your preference.
 
@@ -62,7 +62,7 @@ python -m venv gamagpt-chatbot
 source gamagpt-inference/bin/activate       # for ubuntu
 gamagpt-inference/Scripts/activate       # for windows
 ```
-#### 3. Install libraries
+#### 3.1.3 Install libraries
 Following the environment installation, activate your environment and install the required libraries by running:
 ```
 cd path/to/GAMABot
@@ -73,7 +73,7 @@ pip install -r requirements.txt
 > - Each part of the project will require installation of multiple libraries, and there may be conflicts between them.
 > - Using environments will get rid of confliction between libraries.
 ------
-### Run inference
+### 3.2. Run inference
 You can have 2 options
 - **i. Run straight on your local machine**
 ```
@@ -82,7 +82,7 @@ python ./inference/python/command-line-inference.py
 - **ii. Or you can run it on Google Colab/Jupyter Notebook** by following each steps in file named `peft-inference.ipynb` in `./inference/ipynb` directory. 
 
 ------
-### Run Chatbot Interface
+### 3.3. Run Chatbot Interface
 - **i. Run straight on your local machine**
 ```
 python ./app/gradio-app.py
@@ -92,7 +92,7 @@ python ./app/gradio-app.py
 ------
 
 
-## Finetuning use your own dataset
+## 4. Finetuning use your own dataset
 > [!NOTE]
 > - *For more detailed information about the pipeline, each stage, and in-depth knowledge about how it works, please follow the tutorials in the `tutorials` directory.*
 > - Or you can follow these steps down below to do a fast fine-tuned with `Mistral-Instruct-7B-v2.0` model.
@@ -104,13 +104,14 @@ python ./app/gradio-app.py
 > ```
 > Now you're all good! Let's finetune model to your preference
 
-### Create your own dataset
+### 4.1. Create your own dataset
 Our based model is `Mistral-Instruct-7B-v0.2` so we will follow their Instruction format for our dataset.
 
 Due to MistralAI, in order to leverage instruction fine-tuning, your prompt should be surrounded by `[INST]` and `[/INST]` tokens. The very first instruction should begin with a begin of sentence id. The next instructions should not. The assistant generation will be ended by the end-of-sentence token id.
 
-For example:
+
 ```
+FOR EXAMPLE
 PROMPT:
     "<s>[INST] What is your favourite condiment? [/INST]"
 
@@ -120,14 +121,13 @@ ANSWER:
 
 So the idea is to create a dataset with pairs of questions - answers (however you like it, do it by yourself or take a public dataset) under a `.csv` format (which in my personal experience, is much handier) and then
 ```
-cd ./data/code/
-python format-data.py
-python csv2json.py
+python ./data/code/format-data.py
+python ./data/code/csv2json.py
 ```
 And then put your output to `data/train` or `data/eval` directory. And Voilá, you have your dataset to finetune model now!
 
 ------
-### Finetune Model
+### 4.2. Finetune Model
 Run this in your terminal
 ```
 cd /path/to/GAMABot
@@ -172,3 +172,5 @@ OVERWRITE_OUTPUT_DIR=false
 REPORT_TO="wandb"        # comment this if you don't want to use wandb
 ```
 To know better about how parameters and its values will effect our model, please visit [HuggingFace Trainer Parameters Documentation](https://huggingface.co/docs/transformers/main_classes/trainer) for more details.
+
+### Run your model
