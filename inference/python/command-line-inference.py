@@ -31,7 +31,7 @@ def load_base_model():
 def load_peft_model(model, tokenizer):
 
     # Read input lines from input.txt file
-    with open("./server/input.txt", "r") as input_file:
+    with open("./inference/python/input.txt", "r") as input_file:
         for line in tqdm(input_file):
             eval_prompt = line.strip()  # Remove trailing newline and whitespace
             model_input_prompt = tokenizer(eval_prompt, return_tensors='pt').to('cuda')
@@ -47,7 +47,7 @@ def load_peft_model(model, tokenizer):
                 output_list.append({"question": eval_prompt, "answer": generated_text})
 
     # Write the output list to a JSON file
-    with open("./output-500.json", "w") as output_json:
+    with open("./output.json", "w") as output_json:
         json.dump(output_list, output_json, indent=4)
 
 if __name__ == "__main__":
