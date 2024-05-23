@@ -6,7 +6,7 @@ from tqdm import tqdm
 
 def load_base_model():
     # Load base model
-    base_model_id = 'mistralai/Mistral-7B-Instruct-v0.2'
+    base_model_id = 'Phanh2532/GAMA-Code-generator-v1.0'
     bnb_config = BitsAndBytesConfig(
         load_in_4bit=True,
         bnb_4bit_use_double_quant=True,
@@ -26,14 +26,9 @@ def load_base_model():
     )
     tokenizer.pad_token = tokenizer.eos_token
 
-    return base_model, tokenizer
+    return model, tokenizer
 
 def load_peft_model(base_model, tokenizer):
-    ft_model = PeftModel.from_pretrained(base_model, 
-                                        "/home/phuong-anh/gama/trained-model/mistral1/checkpoint-200")
-
-    # Create a list to store the generated outputs
-    output_list = []
 
     # Read input lines from input.txt file
     with open("./server/input.txt", "r") as input_file:
