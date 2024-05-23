@@ -105,8 +105,25 @@ python ./app/gradio-app.py
 > Now you're all good! Let's finetune model to your preference
 
 ### Create your own dataset
+Our based model is `Mistral-Instruct-7B-v0.2` so we will follow their Instruction format for our dataset.
 
+Due to MistralAI, in order to leverage instruction fine-tuning, your prompt should be surrounded by `[INST]` and `[/INST]` tokens. The very first instruction should begin with a begin of sentence id. The next instructions should not. The assistant generation will be ended by the end-of-sentence token id.
 
+For example:
+```
+PROMPT:
+    "<s>[INST] What is your favourite condiment? [/INST]"
+ANSWER:
+    "Well, I'm quite partial to a good squeeze of fresh lemon juice. It adds just the right amount of zesty flavour to whatever I'm cooking up in the kitchen!</s> "
+```
+
+So the idea is to create a dataset with pairs of questions - answers (however you like it, do it by yourself or take a public dataset) under a `.csv` format (which in my personal experience, is much handier) and then
+```
+cd ./data/code/
+python format-data.py
+python csv2json.py
+```
+And then put your output to `data/train` or `data/eval` directory. And Voilá, you have your dataset to finetune model now!
 
 ------
 ### Finetune Model
