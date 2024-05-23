@@ -77,12 +77,40 @@ pip install -r requirements.txt
 > - Using environments will get rid of confliction between libraries.
 ------
 ### 3.2. Run inference
-You can have 2 options
-- **i. Run straight on your local machine**
+You can have 3 options
+- **i. Copy and run these python code**
+```py
+import torch
+from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
+model_id = "Phanh2532/GAMA-Code-generator-v1.0"    # or path to your HuggingFace repo_id of your base model
+bnb_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_use_double_quant=True,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_compute_dtype=torch.bfloat16
+)
+
+model = AutoModelForCausalLM.from_pretrained(
+    model_id, 
+    quantization_config=bnb_config,  # Same quantization config as before
+    device_map="auto",
+    trust_remote_code=True,
+    use_auth_token=True
+)
+eval_tokenizer = AutoTokenizer.from_pretrained(model_id, add_bos_token=True, trust_remote_code=True)
+
+eval_prompt = "Create a GAML code snippet inspired by water pollution in real life" # Change this with your wanted prompt
+
+model_input = eval_tokenizer(eval_prompt, return_tensors="pt").to("cuda")
+with torch.no_grad():
+    print(eval_tokenizer.decode(model.generate(**model_input, max_new_tokens=2000, repetition_penalty=1.15)[0], skip_special_tokens=True))
+    print('----------------------------------------------------------------------')
+```
+- **ii. Run straight on your local machine**
 ```
 python ./inference/python/command-line-inference.py
 ```
-- **ii. Or you can run it on Google Colab/Jupyter Notebook** by following each steps in file named `peft-inference.ipynb` in `./inference/ipynb` directory. 
+- **iii. Or you can run it on Google Colab/Jupyter Notebook** by following each steps in file named `peft-inference.ipynb` in `./inference/ipynb` directory. 
 
 ------
 ### 3.3. Run Chatbot Interface
