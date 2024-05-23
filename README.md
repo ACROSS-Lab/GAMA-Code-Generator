@@ -15,7 +15,7 @@
 >   - 🚀 [**Reward Dataset**](https://huggingface.co/datasets/Phanh2532/reward-GAML) - 149 pairs of question - answer about GAML language
 
 > [!IMPORTANT]
->   - We recommend you guys to have a HuggingFace account for this project because this will improve the process SO much later since our models and datasets are public on HuggingFace. But still, this is optional
+>   - We strongly suggest creating a HuggingFace account for this project. It can greatly streamline the process later on as our models and datasets are publicly accessible on HuggingFaceBut still, this is optional.
 
 --------
 [![🚀**Little Demo with GAMAChatbot**](https://github.com/ACROSS-Lab/GAMA-Code-Generator/blob/main/assets/DemoGAMABOT.png)](https://www.youtube.com/watch?v=7m-WpGrlJ0U)
@@ -53,14 +53,14 @@ Feel free to utilize either a Python environment or a Conda environment based on
           You can follow instructions from  [miniconda](https://docs.anaconda.com/free/miniconda/index.html) website to install Conda environment and [cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf) to use it or follow below instruct for fast create and activate Conda environment:
 ```
 conda create --name gamagpt-inference            # create environment named gamagpt-inference (change the name to your preference)
-conda activate gamagpt-inference            # activate conda environment
-conda deactivate          # if you want to use other environments or just don't want to stay on this environment
+conda activate gamagpt-inference                 # activate conda environment
+conda deactivate                                 # if you want to use other environments or just don't want to stay on this environment
 ``` 
   - **ii. For Python environment**, follow bellow instructs:
 ```
 python -m venv gamagpt-chatbot
 source gamagpt-inference/bin/activate       # for ubuntu
-gamagpt-inference/Scripts/activate       # for windows
+gamagpt-inference/Scripts/activate          # for windows
 ```
 #### 3.1.3 Install libraries
 Following the environment installation, activate your environment and install the required libraries by running:
