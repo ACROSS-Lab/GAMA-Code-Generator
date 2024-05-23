@@ -1,0 +1,6 @@
+datasets
+trl
+peft
+bitsandbytes
+sentenpiece
+wandb
