@@ -1,3 +1,5 @@
+# FINETUNE TUTORIAL
+![_Main pipeline_](https://github.com/ACROSS-Lab/GAMABot/blob/main/assets/rlhf-pipeline.png)
 
 ## 1. Create your own dataset
 Our based model is `Mistral-Instruct-7B-v0.2` so we will follow their Instruction format for our dataset.
