@@ -113,8 +113,12 @@ python ./app/gradio-app.py
 Run this in your terminal
 ```
 cd /path/to/GAMABot
-chmod u+x ./finetune.sh
-./finetune.sh                   # automatically train Mistral-Instruct-7B-v0.2 on 1 gpu
+chmod u+x ./finetune.sh         # automatically train Mistral-Instruct-7B-v0.2 on 1 gpu
+./finetune.sh
+```
+or
+```
+chmod u+x ./finetune-multi-gpus.sh                       
 ./finetune-multi-gpus.sh        # automatically train Mistral-Instruct-7B-v0.2 on multiple gpus
 ```
 By running the bash script files, you have already trained the model using the parameters I provided. These parameters were set up as follows in `finetune.sh` and `finetune-multi-gpus.sh`:
