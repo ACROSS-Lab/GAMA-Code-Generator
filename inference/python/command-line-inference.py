@@ -28,7 +28,7 @@ def load_base_model():
 
     return model, tokenizer
 
-def load_peft_model(base_model, tokenizer):
+def load_peft_model(model, tokenizer):
 
     # Read input lines from input.txt file
     with open("./server/input.txt", "r") as input_file:
@@ -36,9 +36,9 @@ def load_peft_model(base_model, tokenizer):
             eval_prompt = line.strip()  # Remove trailing newline and whitespace
             model_input_prompt = tokenizer(eval_prompt, return_tensors='pt').to('cuda')
         
-            ft_model.eval()
+            model.eval()
             with torch.no_grad():
-                generated_text = tokenizer.decode(ft_model.generate(**model_input_prompt,
+                generated_text = tokenizer.decode(model.generate(**model_input_prompt,
                                                     max_new_tokens=1042,
                                                     repetition_penalty=1.15)[0],
                                         skip_special_tokens=True)
@@ -51,6 +51,6 @@ def load_peft_model(base_model, tokenizer):
         json.dump(output_list, output_json, indent=4)
 
 if __name__ == "__main__":
-    base_model, tokenizer = load_base_model()
-    load_peft_model(base_model, tokenizer)
+    model, tokenizer = load_base_model()
+    load_peft_model(model, tokenizer)
 
