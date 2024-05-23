@@ -78,7 +78,7 @@ pip install -r requirements.txt
 ------
 ### 3.2. Run inference
 You can have 3 options
-- **i. Copy and run these python code**
+- **i. Copy and run this python program**
 ```py
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
@@ -106,7 +106,8 @@ with torch.no_grad():
     print(eval_tokenizer.decode(model.generate(**model_input, max_new_tokens=512, repetition_penalty=1.15)[0], skip_special_tokens=True))
     print('----------------------------------------------------------------------')
 ```
-- **ii. Run straight on your local machine**
+- **ii. Run python script**
+This will generate output for list of prompts in `./inference/input.txt`. You can change the prompt by edit `input.txt` file.
 ```
 python ./inference/python/command-line-inference.py
 ```
