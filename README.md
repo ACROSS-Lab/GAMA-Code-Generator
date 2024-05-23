@@ -173,4 +173,38 @@ REPORT_TO="wandb"        # comment this if you don't want to use wandb
 ```
 To know better about how parameters and its values will effect our model, please visit [HuggingFace Trainer Parameters Documentation](https://huggingface.co/docs/transformers/main_classes/trainer) for more details.
 
-### Run your model
+### 5. Run your model
+Run these python code
+```py
+import torch
+from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
+base_model_id = "mistralai/Mistral-Instruct-7B-v0.2"    # or path to your HuggingFace repo_id of your base model
+bnb_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_use_double_quant=True,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_compute_dtype=torch.bfloat16
+)
+
+base_model = AutoModelForCausalLM.from_pretrained(
+    base_model_id,  # Mistral, same as before
+    quantization_config=bnb_config,  # Same quantization config as before
+    device_map="auto",
+    trust_remote_code=True,
+    use_auth_token=True
+)
+eval_tokenizer = AutoTokenizer.from_pretrained(base_model_id, add_bos_token=True, trust_remote_code=True)
+```
+and then
+```py
+from peft import PeftModel
+import torch
+ft_model = PeftModel.from_pretrained(base_model, "/path/to/your/local/finetuned/model")
+eval_prompt = "Create a GAML code snippet inspired by water pollution in real life"
+model_input = eval_tokenizer(eval_prompt, return_tensors="pt").to("cuda")
+ft_model.eval()
+with torch.no_grad():
+    print(eval_tokenizer.decode(ft_model.generate(**model_input, max_new_tokens=2000, repetition_penalty=1.15)[0], skip_special_tokens=True))
+    print('----------------------------------------------------------------------')
+    #print(eval_tokenizer.decode(ft_model2.generate(**model_input, max_new_tokens=2000, repetition_penalty=1.15)[0], skip_special_tokens=True))
+```
