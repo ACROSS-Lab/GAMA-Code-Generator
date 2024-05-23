@@ -28,7 +28,7 @@ def load_base_model():
 
     return model, tokenizer
 
-def load_peft_model(model, tokenizer):
+def load_model(model, tokenizer):
 
     # Read input lines from input.txt file
     with open("./inference/python/input.txt", "r") as input_file:
