@@ -131,7 +131,6 @@ And then put your output to `data/train` or `data/eval` directory. And Voilá, y
 ### 4.2. Finetune Model
 Run this in your terminal
 ```
-cd /path/to/GAMABot
 chmod u+x ./finetune.sh         # automatically train Mistral-Instruct-7B-v0.2 on 1 gpu
 ./finetune.sh
 ```
