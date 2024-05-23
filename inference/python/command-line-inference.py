@@ -4,7 +4,7 @@ import torch
 from peft import PeftModel
 from tqdm import tqdm 
 
-def load_base_model():
+def load_model():
     # Load base model
     base_model_id = 'Phanh2532/GAMA-Code-generator-v1.0'
     bnb_config = BitsAndBytesConfig(
@@ -28,7 +28,7 @@ def load_base_model():
 
     return model, tokenizer
 
-def load_model(model, tokenizer):
+def run_inference(model, tokenizer):
 
     # Read input lines from input.txt file
     with open("./inference/python/input.txt", "r") as input_file:
@@ -51,6 +51,6 @@ def load_model(model, tokenizer):
         json.dump(output_list, output_json, indent=4)
 
 if __name__ == "__main__":
-    model, tokenizer = load_base_model()
-    load_peft_model(model, tokenizer)
+    model, tokenizer = load_model()
+    run_inference(model, tokenizer)
 
