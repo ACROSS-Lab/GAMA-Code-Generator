@@ -15,7 +15,7 @@
 >   - 🚀 [**Reward Dataset**](https://huggingface.co/datasets/Phanh2532/reward-GAML) - 149 pairs of question - answer about GAML language
 
 > [!IMPORTANT]
->   - We strongly suggest creating a HuggingFace account for this project. It can greatly streamline the process later on as our models and datasets are publicly accessible on HuggingFace. But still, this is optional.
+>   - We _strongly suggest creating a HuggingFace account and log in using `huggingface-cli login` for this project_. It can greatly streamline the process later on as our models and datasets are publicly accessible on HuggingFace. But still, this is optional.
 >   - For people who don't want to use HuggingFace platform:
 >       - To deploy GAMABot, please visit via upper link and download version of GAMA-Code-Generator you like to your local machine.    
 >       - To finetune Mistral with your own dataset, please follow instructions from [Mistral AI Repo](https://github.com/mistralai/mistral-inference/tree/main) to download Mistral.
