@@ -3,11 +3,8 @@ transformers
 peft
 accelerate
 datasets 
-scipy 
-ipywidgets
 huggingface
 wandb
-trl
 gradio
 wandb
 threaded
