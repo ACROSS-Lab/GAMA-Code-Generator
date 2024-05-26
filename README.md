@@ -18,7 +18,7 @@
 >   - We _strongly suggest creating a HuggingFace account and log in using `huggingface-cli login` for this project_. It can greatly streamline the process later on as our models and datasets are publicly accessible on HuggingFace. But still, this is optional.
 >   - For people who don't want to use HuggingFace platform:
 >       - To deploy GAMABot, please visit via upper link and download version of GAMA-Code-Generator you like to your local machine.    
->       - To finetune Mistral with your own dataset, please follow instructions from [Mistral AI Repo](https://github.com/mistralai/mistral-inference/tree/main) to download Mistral.
+>       - To finetune Mistral with your own dataset, please follow instructions from [Mistral AI Repo](https://github.com/mistralai/mistral-inference/tree/main) to download Mistral as your base model.
 
 --------
 [![🚀**Little Demo with GAMAChatbot**](https://github.com/ACROSS-Lab/GAMA-Code-Generator/blob/main/assets/DemoGAMABOT.png)](https://www.youtube.com/watch?v=7m-WpGrlJ0U)
@@ -107,7 +107,7 @@ with torch.no_grad():
     print('----------------------------------------------------------------------')
 ```
 - **ii. Run python script**
-This will generate output for list of prompts in `./inference/input.txt`. You can change the prompt by edit `input.txt` file.
+This will generate output for bunch of prompts in `./inference/input.txt`. You can change the prompt by edit `input.txt` file.
 ```
 python ./inference/python/command-line-inference.py
 ```
